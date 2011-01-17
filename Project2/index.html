@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Life Figure-Outer Application</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+	</head>
+	<body>
+		<div class="Top" align="bottom">
+			<h1 id="maintitle">The Magic Life Figure-Outer!</h1>
+			<p id="subtitle">Figuring out your life for you, so you don't have to...</p>
+		</div>
+		<div class="NavBar">
+			<ul id="Nav">
+				<li><a href="#">Home<span>Would you like to go home?</span></a></li>
+				<li><a href="#">Interests<span>What are you interested in?</span></a></li>
+				<li><a href="#">Health<span>Are you a healthy person?</span></a></li>
+				<li><a href="#">Academic<span>Are you a smart person?</span></a></li>
+				<li><a href="#">Professional<span>Are you a working person?</span></a></li>
+				<li><a href="#">Fun<span>Do you like to have fun?</span></a></li>
+				<li><a href="#">Evil<span>Are you a bad person?</span></a></li>
+			</ul>
+		</div>
+		<div class="Middle">
+			<div class="Left">
+				<h2 id="midhead">Lorem Ipsum Dolor Sit Amet.</h2>
+				<form id="labels">
+					<div class="labels">
+						<p id="feellab">How do you feel today?</p>
+						<p id="wishlab">How would you like feel? (choose all that apply)</p>
+					</div>
+					<div class="selections">
+						<input type="text" name="feeling" id="feeling" onChange="feel.disabled=1"}/><br/>
+						<select name="wish" id="wish" size="4">
+							<option value="1">Comfortably numb</option>
+							<option value="2">Grumpy as poop, you jerk</option>
+							<option value="3">Happy like I'm on controlled substances</option>
+							<option value="4">Normal. Absolutely Normal.</option>
+						</select><br/>
+						<button type="submit" name="feel" id="feel" onclick="alert('How do you feel today?')" value="Confirmation Alert">Feel me!</button>
+					</div>
+				</form>
+			</div>
+			<div class="Right">
+				<h3 id="current">Current Progress in Life</h3>
+				<p id="progress">Mediocre. You really should enjoy life more.</p>
+			</div>
+		</div>
+		<div class="Foot">
+			<p id="bottom">&copy 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</p>
+		</div>
+	</body>
+
+</html> 
