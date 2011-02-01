@@ -8,5 +8,11 @@ class StoreController < ApplicationController
   def find_cart
 	session[:cart] ||= Cart.new
   end
+  
+  def add_to_cart
+	product = Product.find(params[:id])
+	@cart = find_cart
+	@cart.add_product(product)
+  end
 
 end
