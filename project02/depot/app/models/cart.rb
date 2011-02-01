@@ -11,5 +11,9 @@ class Cart
 		else
 			@items <<CartItem.new(product)
 	end
+	
+	def total_price
+		@items.sum { |item| item.price }
+	end
 end
  
