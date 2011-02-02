@@ -1,11 +1,10 @@
 class StoreController < ApplicationController
+      before_filter :find_cart, :except => :empty_cart
 
-  before_filter :find_cart, :except => :empty_cart      
-  
   def index
     @products = Product.find_products_for_sale
   end
-  
+ 
   def add_to_cart
     product = Product.find(params[:id])
     @current_item = @cart.add_product(product)
@@ -31,19 +30,18 @@ class StoreController < ApplicationController
     @order.add_line_items_from_cart(@cart)
     if @order.save
       session[:cart] = nil
-      redirect_to_index("Thank you for your order")
+      redirect_to_index(I18n.t('flash.thanks'))
     else
       render :action => 'checkout'
     end
   end
-
+  
   def empty_cart
     session[:cart] = nil
     redirect_to_index
   end
   
 private
-
   def redirect_to_index(msg = nil)
     flash[:notice] = msg if msg
     redirect_to :action => 'index'
@@ -52,10 +50,9 @@ private
   def find_cart
     @cart = (session[:cart] ||= Cart.new)
   end
-      
-protected
 
+protected
   def authorize
   end
-  
 end
+

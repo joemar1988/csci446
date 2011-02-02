@@ -1,13 +1,18 @@
-<div class="cart-title">Your Cart</div>
-<table>
-  <%= render(:partial => "cart_item", :collection => cart.items) %>  
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><div class="cart-title">Your Cart</div>
+&lt;%= render(:partial =&gt; "cart_item", :collection =&gt; cart.items) %&gt;  
   
-  <tr class="total-line">
-    <td colspan="2">Total</td>
-    <td class="total-cell"><%= number_to_currency(cart.total_price) %></td>
-  </tr>
-
-</table>
+  <table>
+  <tbody>
+	<tr class="total-line">
+		<td colspan="2">Total</td>
+		<td class="total-cell">&lt;%= number_to_currency(cart.total_price) %&gt;</td>
+	</tr>
+  </tbody>
+  </table>
   
-<%= button_to "Checkout", :action => :checkout %>
-<%= button_to "Empty cart", :action => :empty_cart %>
+<!-- START_HIGHLIGHT -->
+&lt;%= button_to "Checkout", :action =&gt; 'checkout' %&gt;
+<!-- END_HIGHLIGHT -->
+&lt;%= button_to "Empty cart", :action =&gt; :empty_cart %&gt;
+</body></html>

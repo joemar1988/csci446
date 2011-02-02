@@ -1,25 +1,31 @@
-<p id="notice"><%= notice %></p>
+<div id="product-list">
+<h1>Listing products</h1>
 
-<p>
-  <b>Title:</b>
-  <%=h @product.title %>
-</p>
+<table>
+<% @products.each do |product| %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+ 
+    <td>
+	<%= image_tag  product.image_url, :class => 'list-image' %>
+	</td>
+    
+	<td class="list-description">
+		<dl>
+			<dt><%=h product.title %></dt>
+			<dd><%=h truncate(product.description.gsub(/<.*?>/,''), :length => 80) %></dd>
+		</dl>
+    </td>
+	
+	<td class="list-actions">
+	<%= link_to 'Show', product %></td>
+    <%= link_to 'Edit', edit_product_path(product) %>
+    <%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %>
+	</td>
+  </tr>
+<% end %>
+</table>
+</div>
 
-<p>
-  <b>Description:</b>
-  <%= @product.description %>
-</p>
+<br />
 
-<p>
-  <b>Image url:</b>
-  <%=h @product.image_url %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%=h @product.price %>
-</p>
-
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to 'New Product', new_product_path %>

@@ -1,23 +1,21 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <b>Product:</b>
-  <%= @line_item.product_id %>
+  <%=h @line_item.product_id %>
 </p>
 
 <p>
   <b>Order:</b>
-  <%= @line_item.order_id %>
+  <%=h @line_item.order_id %>
 </p>
 
 <p>
   <b>Quantity:</b>
-  <%= @line_item.quantity %>
+  <%=h @line_item.quantity %>
 </p>
 
 <p>
   <b>Total price:</b>
-  <%= @line_item.total_price %>
+  <%=h @line_item.total_price %>
 </p>
 
 

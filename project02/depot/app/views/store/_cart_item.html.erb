@@ -1,9 +1,13 @@
-<% if cart_item == @current_item %>
-  <tr id="current_item">
-<% else %>
-  <tr>
-<% end %>
-  <td><%= cart_item.quantity %>&times;</td>
-  <td><%=h cart_item.title %></td>
-  <td class="item-price"><%= number_to_currency(cart_item.price) %></td>
-</tr>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- START_HIGHLIGHT -->
+</head><body>&lt;% if cart_item == @current_item %&gt;
+  
+&lt;% else %&gt;
+  
+&lt;% end %&gt;
+<!-- #END_HIGHLIGHT -->
+  &lt;%= cart_item.quantity %&gt;×
+  &lt;%=h cart_item.title %&gt;
+  &lt;%= number_to_currency(cart_item.price) %&gt;
+
+</body></html>

@@ -1,12 +1,3 @@
-#---
-# Excerpted from "Agile Web Development with Rails, 3rd Ed.",
-# published by The Pragmatic Bookshelf.
-# Copyrights apply to this code. It may not be used to create training material, 
-# courses, books, articles, and the like. Contact us if you are in doubt.
-# We make no guarantees that this code is fit for any purpose. 
-# Visit http://www.pragmaticprogrammer.com/titles/rails3 for more book information.
-#---
-
 class AddTestData < ActiveRecord::Migration
   def self.up
     Product.delete_all
@@ -27,7 +18,6 @@ class AddTestData < ActiveRecord::Migration
     :image_url =>   '/images/auto.jpg',    
     :price => 29.95)
 
-
     Product.create(:title => 'Pragmatic Version Control',
       :description =>
       %{<p>
@@ -40,8 +30,6 @@ class AddTestData < ActiveRecord::Migration
       </p>},
     :image_url => '/images/svn.jpg',
     :price => 28.50)
-    # . . .
-
 
     Product.create(:title => 'Pragmatic Unit Testing (C#)',
     :description => 
@@ -60,7 +48,6 @@ class AddTestData < ActiveRecord::Migration
       </p>},
     :image_url => '/images/utc.jpg',
     :price => 27.75)
-
 
   end
 

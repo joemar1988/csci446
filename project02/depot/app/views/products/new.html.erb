@@ -4,24 +4,25 @@
 	<%= f.error_messages %>
 
 	<p>
-		<%= f.label :title %><br />
-		<%= f.text_field :title %>
+	<%= f.label :title %><br/>
+	<%= f.text_field :title %>
 	</p>
+	
 	<p>
-		<%= f.label :description %><br />
-		<%= f.text_area :description, :rows => 6 %>
+	<%= f.label :description %><br/>
+	<%= f.text_area :description, :rows => 6 %>
 	</p>
+
 	<p>
-		<%= f.label :image_url %><br />
-		<%= f.text_field :image_url %>
+	<%= f.label :price %><br/>
+	<%= f.text_field :price %>
 	</p>
+
 	<p>
-		<%= f.label :price %><br />
-		<%= f.text_field :price %>
+	<%= f.submit 'Create' %><br/>
 	</p>
-	<p>
-		<%= f.submit 'Create' %>
-	</p>
-	<% end %>
+	
+<% end %>
+
 	
 <%= link_to 'Back', products_path %>

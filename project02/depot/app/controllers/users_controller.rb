@@ -2,7 +2,6 @@ class UsersController < ApplicationController
 
   def index
     @users = User.find(:all, :order => :name)
-
     respond_to do |format|
       format.html 
       format.xml  { render :xml => @users }
@@ -11,7 +10,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-
     respond_to do |format|
       format.html 
       format.xml  { render :xml => @user }
@@ -20,7 +18,6 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-
     respond_to do |format|
       format.html 
       format.xml  { render :xml => @user }
@@ -33,7 +30,6 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-
     respond_to do |format|
       if @user.save
         flash[:notice] = "User #{@user.name} was successfully created."
@@ -50,7 +46,6 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-
     respond_to do |format|
       if @user.update_attributes(params[:user])
         flash[:notice] = "User #{@user.name} was successfully updated."
@@ -72,11 +67,9 @@ class UsersController < ApplicationController
     rescue Exception => e
       flash[:notice] = e.message
     end
-
     respond_to do |format|
       format.html { redirect_to(users_url) }
       format.xml  { head :ok }
     end
-  
   end
 end

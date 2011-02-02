@@ -1,32 +1,52 @@
-<div class="depot-form">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><div class="depot-form">
   
-  <%= error_messages_for 'order' %>
-  <% form_for :order, :url => { :action => :save_order } do |form| %>
+  &lt;%= error_messages_for 'order' %&gt;
+  
+  &lt;% form_for :order, :url =&gt; { :action =&gt; :save_order } do |form| %&gt;
     <fieldset>
-      <legend>Please Enter Your Details</legend>
+<!-- START_HIGHLIGHT -->
+      <legend>&lt;%= I18n.t 'checkout.legend' %&gt;</legend>
+<!-- END_HIGHLIGHT -->
 
       <div>
-        <%= form.label :name, "Name:" %>
-        <%= form.text_field :name, :size => 40 %>
+<!-- START_HIGHLIGHT -->
+        &lt;%= form.label :name, I18n.t('checkout.name') + ":" %&gt;
+<!-- END_HIGHLIGHT -->
+        &lt;%= form.text_field :name, :size =&gt; 40 %&gt;
       </div>
 
       <div>
-        <%= form.label :address, "Address:" %>
-        <%= form.text_area :address, :rows => 3, :cols => 40 %>
+<!-- START_HIGHLIGHT -->
+        &lt;%= form.label :address, I18n.t('checkout.address') + ":" %&gt;
+<!-- END_HIGHLIGHT -->
+        &lt;%= form.text_area :address, :rows =&gt; 3, :cols =&gt; 40 %&gt;
       </div>
 
       <div>
-        <%= form.label :email, "E-Mail:" %>
-        <%= form.text_field :email, :size => 40 %>
+<!-- START_HIGHLIGHT -->
+        &lt;%= form.label :email, I18n.t('checkout.email') + ":" %&gt;
+<!-- END_HIGHLIGHT -->
+        &lt;%= form.text_field :email, :size =&gt; 40 %&gt;
       </div>
 
       <div>
-        <%= form.label :pay_type, "Pay with:" %>
-        <%= form.select :pay_type, Order::PAYMENT_TYPES, :prompt => "Select a payment method" %>
+<!-- START_HIGHLIGHT -->
+        &lt;%= form.label :pay_type, I18n.t('checkout.pay_type') + ":" %&gt;
+<!-- END_HIGHLIGHT -->
+        &lt;%=
+          form.select :pay_type,
+                       Order::PAYMENT_TYPES, 
+# START_HIGHLIGHT
+                      :prompt =&gt; I18n.t('checkout.pay_prompt')
+# END_HIGHLIGHT
+        %&gt;
       </div>
-
     
-      <%= submit_tag "Place Order", :class => "submit" %>
+<!-- START_HIGHLIGHT -->
+      &lt;%= submit_tag I18n.t('checkout.submit'), :class =&gt; "submit" %&gt;
+<!-- END_HIGHLIGHT -->
     </fieldset>
-  <% end %>  
+  &lt;% end %&gt;  
 </div>
+</body></html>

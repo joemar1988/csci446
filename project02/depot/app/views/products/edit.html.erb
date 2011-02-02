@@ -1,28 +1,31 @@
-<h1>Editing product</h1>
+<div id="product-list">
+<h1>Listing products</h1>
 
-<% form_for(@product) do |f| %>
-	<%= f.error_messages %>
-
-	<p>
-		<%= f.label :title %><br />
-		<%= f.text_field :title %>
-	</p>
-	<p>
-		<%= f.label :description %><br />
-		<%= f.text_area :description %>
-	</p>
-	<p>
-		<%= f.label :image_url %><br />
-		<%= f.text_field :image_url %>
-	</p>
-	<p>
-		<%= f.label :price %><br />
-		<%= f.text_field :price %>
-	</p>
-	<p>
-		<%= f.submit 'Update' %>
-	</p>
-	<% end %>
+<table>
+<% @products.each do |product| %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+ 
+    <td>
+	<%= image_tag  product.image_url, :class => 'list-image' %>
+	</td>
+    
+	<td class="list-description">
+		<dl>
+			<dt><%=h product.title %></dt>
+			<dd><%=h truncate(product.description.gsub(/<.*?>/,''), :length => 80) %></dd>
+		</dl>
+    </td>
 	
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+	<td class="list-actions">
+	<%= link_to 'Show', product %></td>
+    <%= link_to 'Edit', edit_product_path(product) %>
+    <%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %>
+	</td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+<br />
+
+<%= link_to 'New Product', new_product_path %>
