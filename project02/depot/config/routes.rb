@@ -1,12 +1,18 @@
 Depot::Application.routes.draw do
-  resources :line_items
+  get "admin/login"
 
-  resources :orders
+  get "admin/logout"
+
+  get "admin/index"
+
+  resources :users
 
   get 'store/index'
 
   resources :products
   resources :store
+  resources :line_items
+  resources :orders
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
