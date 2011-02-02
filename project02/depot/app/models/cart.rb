@@ -1,8 +1,8 @@
 class Cart
 	attr_reader :items
 
-	def 
-		initialize @items = []
+	def initialize
+		@items = []
 	end
 	def add_product(product)
 		current_item = @items.find {|item| item.product == product}
