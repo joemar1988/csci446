@@ -1,4 +1,6 @@
 Depot::Application.routes.draw do
+  get "info/who_bought"
+
   get "admin/login"
 
   get "admin/logout"
