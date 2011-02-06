@@ -1,0 +1,29 @@
+<h1>Articl.es</h1>
+<h3>...with a name .com hipsters love!</h3>
+
+<h2>All the World's Articles</h2>
+
+<%= button_to "Create an Article", new_article_path %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author Name </th>
+    <th>Body</th>
+    <th>Creation Date</th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%=h article.title %></td>
+    <td><%=h article.author %></td>
+    <td><%=h article.description %></td>
+    <td><%=h article.created_at %></td>
+    <td><%= link_to 'Show', article %></td>
+    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'delete', article, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
