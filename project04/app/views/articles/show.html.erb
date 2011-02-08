@@ -1,12 +1,12 @@
 <h1>Articl.es</h1>
 <h3>...what's "Articl in Spanish anyway?</h3>
 
-<%= link_to 'list all articles', articles_path %>
-<%= link_to 'edit', edit_article_path(@article) %>
-<%= link_to 'delete', @article, :confirm => 'Are you sure?', :method => :delete %>
-
+<%= link_to image_tag('arrow_left.png', :border => 0), articles_path %><%= link_to 'list all articles', articles_path %>
+<%= link_to image_tag('database_edit.png', :border => 0), edit_article_path(@article) %><%= link_to 'edit', edit_article_path(@article) %>
+<%= link_to image_tag('database_delete.png', :border => 0), @article, :confirm => 'Are you sure?', :method => :delete %><%= link_to 'delete', @article, :confirm => 'Are you sure?', :method => :delete %>
+<%= link_to image_tag('email.png', :border => 0) %>
 <h2><%=h @article.title %></h2>
-<h3>by <%=h @article.author %>. Number edits since  <%=h @article.created_at %></h3>
+<h3>by <%=h @article.author %>. Number edits since  <%=h @article.created_at.strftime("%A, %b. %d, %Y") %></h3>
 
 <p>
   <b>Description:</b>
