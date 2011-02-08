@@ -1,0 +1,21 @@
+div.heading {
+	text-align:center;
+}
+
+table.complete{
+	width: 100%;
+	border: 1 px;
+}
+
+tr:nth-child(odd) {
+	background: #CCCCCC;
+}
+td:nth-child(5){
+	background: white;
+}
+
+div.body{
+	width: 100%;
+	height: 240px;
+	overflow: auto;
+}

@@ -1,4 +1,10 @@
 class ArticlesController < ApplicationController
+
+  before_filter :prev_link, :only => [:edit]
+  def prev_link
+	session[:redirect] = request.referer
+  end
+
   # GET /articles
   # GET /articles.xml
   def index
@@ -57,15 +63,11 @@ class ArticlesController < ApplicationController
   # PUT /articles/1.xml
   def update
     @article = Article.find(params[:id])
-
-    respond_to do |format|
-      if @article.update_attributes(params[:article])
-        format.html { redirect_to(@article, :notice => 'Article was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
-      end
+    if @article.update_attributes(params[:article])
+      redirect_to(session[:redirect], :success => 'Article was successfully updated.')
+    else
+      format.html { render :action => "edit" }
+      format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
     end
   end
 

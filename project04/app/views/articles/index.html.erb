@@ -1,33 +1,33 @@
-<h1>Articl.es</h1>
-<h3>...with a name .com hipsters love!</h3>
+<div class=heading>
+	<h1>Articl.es</h1>
+	<h3>...with a name .com hipsters love!</h3>
+</div>
 
 <h2>All the World's Articles</h2>
+<%= link_to image_tag('add.png', :border => 0), new_article_path, :title => "create a new article" %>
+<%= link_to 'Create an Article', new_article_path, :title => "create a new article" %>
 
-<%= link_to image_tag('add.png', :border => 0), new_article_path %><%= link_to 'Create an Article', new_article_path %>
-
-<table>
-  <thead>
-	<tr>
-		<th>Title</th>
-		<th>Author Name </th>
-		<th>Body</th>
-		<th>Creation Date</th>
-	</tr>
-  </thead>
-  <tbody>
-	<% @articles.each do |article| %>
+<div class=body>
+	<table class=complete>
 		<tr>
-			<td><%=h article.title %></td>
-			<td><%=h article.author %></td>
-			<td><%=h truncate(article.description, :length=>32) %></td>
-			<td><%=h article.created_at.strftime("%A, %b. %d, %Y") %></td>
-			<td><%= link_to image_tag('magnifier.png', :border => 0), article %></td>
-			<td><%= link_to image_tag('database_edit.png', :border => 0), edit_article_path(article) %></td>
-			<td><%= link_to image_tag('database_delete.png', :border => 0), article, :confirm => 'Are you sure?', :method => :delete %></td>
+			<th>Title</th>
+			<th>Author Name </th>
+			<th>Body</th>
+			<th>Creation Date</th>
 		</tr>
-	<% end %>
-  </tbody>
-</table>
-<h3><%=h @articles.count %> articles</h3>
-
-<br />
+		<% @articles.each do |article| %>
+			<tr>
+				<td><%=h article.title %></td>
+				<td><%=h article.author %></td>
+				<td><%=h truncate(article.description, :length=>32) %></td>
+				<td><%=h article.created_at.strftime("%A, %b. %d, %Y") %></td>
+				<td>
+					<%= link_to image_tag('magnifier.png', :border => 0), article, :title => "view this article" %>
+					<%= link_to image_tag('database_edit.png', :border => 0), edit_article_path(article), :title => "edit this article" %>
+					<%= link_to image_tag('database_delete.png', :border => 0), article, :confirm => 'Are you sure?', :method => :delete, :title => "delete this article" %>
+				</td>
+			</tr>
+		<% end %>
+	</table>
+</div>
+<h3><%=h pluralize(@articles.count, 'article') %></h3>

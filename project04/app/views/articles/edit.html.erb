@@ -1,7 +1,10 @@
-<h1>Articl.es</h1>
-<h3>...my cousin works for Bit.ly</h3>
+<div class=heading>
+	<h1>Articl.es</h1>
+	<h3>...my cousin works for Bit.ly</h3>
+</div>
 
-<%= link_to image_tag('arrow_left.png', :border => 0), :back %><%= link_to 'back', :back %>
+<%= link_to image_tag('arrow_left.png', :border => 0), :back, :title => "return to previous page" %>
+<%= link_to 'back', :back, :title => "return to previous page" %>
 
 <h2>Editing "<%=h @article.title %>"</h2>
 
@@ -21,6 +24,6 @@
     <%= f.text_area :description %>
   </p>
   <p>
-    <%= f.submit 'Save Changes' %>
+    <%= f.submit 'Save Changes', :title => "save and return to previous page (or errors are displayed)" %>
   </p>
 <% end %>

@@ -1,6 +1,10 @@
-<h1>Articl.es</h1>
+<div class=title>
+	<h1>Articl.es</h1>
+	<h3>...not just for the country of Spain</h3>
+</div>
 
-<%= link_to image_tag('arrow_left.png', :border => 0), articles_path %><%= link_to 'list all articles', articles_path %>
+<%= link_to image_tag('arrow_left.png', :border => 0), articles_path, :title => "return to main articles page" %>
+<%= link_to 'list all articles', articles_path, :title => "return to main articles page" %>
 
 <% form_for(@article) do |f| %>
   <%= f.error_messages %>
@@ -18,6 +22,6 @@
     <%= f.text_area :description %>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Create!', :title => "to main articles page (or errors are displayed)" %>
   </p>
 <% end %>
