@@ -1,0 +1,29 @@
+<div class=heading>
+	<h1>Articl.es</h1>
+	<h3>...my cousin works for Bit.ly</h3>
+</div>
+
+<%= link_to image_tag('arrow_left.png', :border => 0), :back, :title => "return to previous page" %>
+<%= link_to 'back', :back, :title => "return to previous page" %>
+
+<h2>Editing "<%=h @article.title %>"</h2>
+
+<% form_for(@article) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit 'Save Changes', :title => "save and return to previous page (or errors are displayed)" %>
+  </p>
+<% end %>

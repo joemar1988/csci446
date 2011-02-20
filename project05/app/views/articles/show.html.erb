@@ -1,0 +1,21 @@
+<div class=heading>
+	<h1>Articl.es</h1>
+	<h3>...what's "Articl in Spanish anyway?</h3>
+</div>
+
+<ul>
+		<%= link_to image_tag('arrow_left.png', :border => 0), articles_path, :title => "return to main articles page" %>
+		<%= link_to 'list all articles', articles_path, :title => "return to main articles page" %>
+		<%= link_to image_tag('database_edit.png', :border => 0), edit_article_path(@article), :title => "edit this artilce" %>
+		<%= link_to 'edit', edit_article_path(@article), :title => "edit this article" %>
+		<%= link_to image_tag('database_delete.png', :border => 0), @article, :confirm => 'Are you sure?', :method => :delete, :title => "delete this article" %>
+		<%= link_to 'delete', @article, :confirm => 'Are you sure?', :method => :delete, :title => "delete this article" %>
+		<%= link_to image_tag('email.png', :border => 0), :title => "email this article" %>
+		<%= link_to 'email', :title => "email this article" %>
+</ul>
+<h2><%=h @article.title %></h2>
+<h3>by <%=h @article.author %>. <%=h @article.created_at.strftime("%A, %b. %d, %Y") %></h3>
+<br />
+<p>
+  <%=h simple_format(@article.description) %>
+</p>
