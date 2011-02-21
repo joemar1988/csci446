@@ -18,6 +18,10 @@
     <%= f.text_field :name %>
   </p>
   <p>
+	<%= f.label :photo %><br />
+    <%= f.file_field :photo %>
+  </p>
+  <p>
      <%= f.submit 'Create!', :title => "to main articles page (or errors are displayed)" %>
   </p>
 <% end %>

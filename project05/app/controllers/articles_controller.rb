@@ -4,8 +4,10 @@ class ArticlesController < ApplicationController
   before_filter :load_authors, :only => [:new, :edit, :update]
   
   def index
-    @articles = Article.all(:include => :author)
-
+    #@articles = Article.all(:include => :author)
+	@num_articles = Article.count
+	@articles = Article.paginate(:page => params[:page])
+	
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
@@ -50,12 +52,15 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find(params[:id])
-    if @article.update_attributes(params[:article])
-      redirect_to(session[:redirect], :success => 'Article was successfully updated.')
-    else
-      format.html { render :action => "edit" }
-      format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
-    end
+	
+	respond_to do |format|
+		if @article.update_attributes(params[:article])
+			redirect_to(session[:redirect], :success => 'Article was successfully updated.')
+		else
+			format.html { render :action => "edit" }
+			format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
+		end
+	end
   end
 
   def destroy

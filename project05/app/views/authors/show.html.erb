@@ -20,10 +20,11 @@
 </ul>
 
 <h3>
-  <%=h @author.name %>
+  Name: <%=h @author.name %>
 </h3>
 <p>
-  <b>Picture:</b>
+  <b>Photo:</b>
+  <%= image_tag @author.photo.url %>
 </p>
 <p>
   <b>Articles:</b>

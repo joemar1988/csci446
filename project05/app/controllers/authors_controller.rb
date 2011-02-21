@@ -1,17 +1,17 @@
 class AuthorsController < ApplicationController
-  # GET /authors
-  # GET /authors.xml
-  def index
-    @authors = Author.all
 
+  before_filter :previous_link, :only => [:edit]
+
+  def index
+	@num_authors = Article.count
+	@authors = Author.paginate(:page => params[:page])
+		
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @authors }
     end
   end
 
-  # GET /authors/1
-  # GET /authors/1.xml
   def show
     @author = Author.find(params[:id])
 
@@ -21,8 +21,6 @@ class AuthorsController < ApplicationController
     end
   end
 
-  # GET /authors/new
-  # GET /authors/new.xml
   def new
     @author = Author.new
 
@@ -32,13 +30,10 @@ class AuthorsController < ApplicationController
     end
   end
 
-  # GET /authors/1/edit
   def edit
     @author = Author.find(params[:id])
   end
 
-  # POST /authors
-  # POST /authors.xml
   def create
     @author = Author.new(params[:author])
 
@@ -53,8 +48,6 @@ class AuthorsController < ApplicationController
     end
   end
 
-  # PUT /authors/1
-  # PUT /authors/1.xml
   def update
     @author = Author.find(params[:id])
 
@@ -69,8 +62,6 @@ class AuthorsController < ApplicationController
     end
   end
 
-  # DELETE /authors/1
-  # DELETE /authors/1.xml
   def destroy
     @author = Author.find(params[:id])
     @author.destroy
@@ -80,4 +71,11 @@ class AuthorsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  private
+
+  def previous_link
+	session[:redirect] = request.referer
+  end
+  
 end

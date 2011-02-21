@@ -35,4 +35,5 @@
 		<% end %>
 	</table>
 </div>
-<h3><%=h pluralize(@articles.count, 'article') %></h3>
+<%= will_paginate @articles %>
+<h3><%=h pluralize(@num_articles, 'article') %></h3>

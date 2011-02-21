@@ -12,7 +12,6 @@
 <%= link_to image_tag('add.png', :border => 0), new_author_path, :title => "create a new author" %>
 <%= link_to 'Create an Author', new_author_path, :title => "create a new author" %>
 
-
 <div class=body>
 	<table class=complete>
 		<tr>
@@ -30,4 +29,5 @@
 		<% end %>
 	</table>
 </div>
-<h3><%=h pluralize(@authors.count, 'author') %></h3>
+<%= will_paginate @authors %>
+<h3><%=h pluralize(@num_authors, 'author') %></h3>
