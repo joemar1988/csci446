@@ -8,10 +8,14 @@
   <%= stylesheet_link_tag 'scaffold', 'article.css' %>
 </head>
 <body>
-
-<p style="color: green"><%= notice %></p>
-
-<%= yield %>
-
+	<div id="container">
+		<h1>Articl.es</h1>
+		<%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
+		<ul class="menubar">
+			<li><%= link_to "articles", articles_path %></li>
+			<li><%= link_to "authors", authors_path %></li>
+		</ul>
+		<%= yield %>
+	</div>
 </body>
 </html>

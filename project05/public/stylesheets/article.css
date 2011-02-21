@@ -19,3 +19,13 @@ div.body{
 	height: 240px;
 	overflow: auto;
 }
+
+ul.menubar{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.menubar li{
+	display: inline;
+}

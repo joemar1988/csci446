@@ -1,85 +1,63 @@
 class ArticlesController < ApplicationController
 
-  before_filter :prev_link, :only => [:edit]
-  def prev_link
-	session[:redirect] = request.referer
-  end
+  before_filter :previous_link, :only => [:edit]
+  before_filter :load_authors, :only => [:new, :edit, :update]
 
-  # GET /articles
-  # GET /articles.xml
   def index
     @articles = Article.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @articles }
-    end
   end
 
-  # GET /articles/1
-  # GET /articles/1.xml
   def show
     @article = Article.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @article }
-    end
   end
 
-  # GET /articles/new
-  # GET /articles/new.xml
   def new
     @article = Article.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @article }
-    end
+	@authors = Author.all
   end
 
-  # GET /articles/1/edit
   def edit
     @article = Article.find(params[:id])
   end
 
-  # POST /articles
-  # POST /articles.xml
   def create
     @article = Article.new(params[:article])
 
-    respond_to do |format|
-      if @article.save
-        format.html { redirect_to(@article, :notice => 'Article was successfully created.') }
-        format.xml  { render :xml => @article, :status => :created, :location => @article }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
-      end
+	if @article.save
+        redirect_to(@article, :flash => { :success => 'Article was successfully created.' })
+    else
+		flash[:error] = 'There was a problem creating the article.'
+        render :action => "new"
     end
   end
 
-  # PUT /articles/1
-  # PUT /articles/1.xml
   def update
     @article = Article.find(params[:id])
+	
     if @article.update_attributes(params[:article])
-      redirect_to(session[:redirect], :success => 'Article was successfully updated.')
+      redirect_to(session[:edit_redirect], :flash => { :success => 'Article was successfully updated.'})
     else
-      format.html { render :action => "edit" }
-      format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
-    end
+		flash[:error] = 'There was a problem updating the article.'
+        render :action => "edit"
+	end
   end
 
-  # DELETE /articles/1
-  # DELETE /articles/1.xml
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(articles_url) }
-      format.xml  { head :ok }
-    end
+	redirect_to(article_url, :flash => { :success => 'Article was successfully deleted.'})
+   
   end
+	
+  private
+
+  def previous_link
+	session[:redirect] = request.referer
+  end
+  
+  def load_authors
+	@authors = Author.all
+  end
+
 end
