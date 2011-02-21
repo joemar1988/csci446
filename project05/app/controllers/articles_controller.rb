@@ -53,13 +53,11 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
 	
-	respond_to do |format|
 		if @article.update_attributes(params[:article])
 			redirect_to(session[:redirect], :success => 'Article was successfully updated.')
 		else
 			format.html { render :action => "edit" }
 			format.xml  { render :xml => @article.errors, :status => :unprocessable_entity }
-		end
 	end
   end
 

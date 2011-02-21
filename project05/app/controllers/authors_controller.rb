@@ -1,7 +1,7 @@
 class AuthorsController < ApplicationController
 
   before_filter :previous_link, :only => [:edit]
-
+  
   def index
 	@num_authors = Article.count
 	@authors = Author.paginate(:page => params[:page])
@@ -13,6 +13,7 @@ class AuthorsController < ApplicationController
   end
 
   def show
+	@author_articles = Article.find_all_by_author_id(params[:id])
     @author = Author.find(params[:id])
 
     respond_to do |format|

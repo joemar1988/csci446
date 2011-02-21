@@ -28,4 +28,13 @@
 </p>
 <p>
   <b>Articles:</b>
+		<ul class="articleList">
+			<% @author_articles.each do |article| %>
+				<li><%=h article.title %>
+					<%= link_to image_tag('magnifier.png', :border => 0), article, :title => "view this article" %>
+					<%= link_to image_tag('database_edit.png', :border => 0), edit_article_path(article), :title => "edit this article" %>
+					<%= link_to image_tag('database_delete.png', :border => 0), article, :confirm => 'Are you sure?', :method => :delete, :title => "delete this article" %>
+				</li>
+			<% end %>
+		</ul>
 </p>
