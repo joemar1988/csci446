@@ -3,10 +3,15 @@
 	<h3>...what's "Articl in Spanish anyway?</h3>
 </div>
 
+<ul class="menubar">
+	<li><%= link_to "articles", articles_path %></li>
+	<li><%= link_to "authors", authors_path %></li>
+</ul>
+
 <ul>
 		<%= link_to image_tag('arrow_left.png', :border => 0), articles_path, :title => "return to main articles page" %>
 		<%= link_to 'list all articles', articles_path, :title => "return to main articles page" %>
-		<%= link_to image_tag('database_edit.png', :border => 0), edit_article_path(@article), :title => "edit this artilce" %>
+		<%= link_to image_tag('database_edit.png', :border => 0), edit_article_path(@article), :title => "edit this article" %>
 		<%= link_to 'edit', edit_article_path(@article), :title => "edit this article" %>
 		<%= link_to image_tag('database_delete.png', :border => 0), @article, :confirm => 'Are you sure?', :method => :delete, :title => "delete this article" %>
 		<%= link_to 'delete', @article, :confirm => 'Are you sure?', :method => :delete, :title => "delete this article" %>

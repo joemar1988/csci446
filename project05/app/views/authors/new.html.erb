@@ -1,15 +1,23 @@
+<div class=heading>
+	<h1>Articl.es</h1>
+	<h3>...not just for the country of Spain</h3>
+</div>
+
+<ul class="menubar">
+	<li><%= link_to "articles", articles_path %></li>
+	<li><%= link_to "authors", authors_path %></li>
+</ul>
+
 <h1>New author</h1>
+
 
 <% form_for(@author) do |f| %>
   <%= f.error_messages %>
-
   <p>
-    <%= f.label :name %><br />
+	<%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+     <%= f.submit 'Create!', :title => "to main articles page (or errors are displayed)" %>
   </p>
 <% end %>
-
-<%= link_to 'Back', authors_path %>

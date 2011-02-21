@@ -5,17 +5,9 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Articles: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold', 'article.css' %>
+  <%= stylesheet_link_tag 'scaffold', 'application.css' %>
 </head>
 <body>
-	<div id="container">
-		<h1>Articl.es</h1>
-		<%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
-		<ul class="menubar">
-			<li><%= link_to "articles", articles_path %></li>
-			<li><%= link_to "authors", authors_path %></li>
-		</ul>
-		<%= yield %>
-	</div>
+	<%= yield %>
 </body>
 </html>

@@ -3,6 +3,11 @@
 	<h3>...my cousin works for Bit.ly</h3>
 </div>
 
+<ul class="menubar">
+	<li><%= link_to "articles", articles_path %></li>
+	<li><%= link_to "authors", authors_path %></li>
+</ul>
+
 <%= link_to image_tag('arrow_left.png', :border => 0), :back, :title => "return to previous page" %>
 <%= link_to 'back', :back, :title => "return to previous page" %>
 
