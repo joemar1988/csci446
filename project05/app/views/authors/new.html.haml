@@ -1,0 +1,19 @@
+.heading
+  %h1 Articl.es
+  %h3 ...not just for the country of Spain
+%ul.menubar
+  %li= link_to "articles", articles_path
+  %li= link_to "authors", authors_path
+%h1 New author
+- form_for(@author) do |f|
+  = f.error_messages
+  %p
+    = f.label :name
+    %br/
+    = f.text_field :name
+  %p
+    = f.label :photo
+    %br/
+    = f.file_field :photo
+  %p
+    = f.submit 'Create!', :title => "to main articles page (or errors are displayed)"

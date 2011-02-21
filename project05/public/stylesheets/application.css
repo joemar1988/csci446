@@ -1,34 +1,22 @@
 div.heading {
-	text-align:center;
-}
+  text-align: center; }
 
-table.complete{
-	width: 100%;
-	border: 1 px;
-}
+table.complete {
+  width: 100%;
+  border: 1 px; }
 
 tr:nth-child(odd) {
-	background: #CCCCCC;
-}
-td:nth-child(5){
-	background: white;
-}
+  background: #cccccc; }
 
-div.body{
-	width: 100%;
-}
+td:nth-child(5) {
+  background: white; }
 
-ul.menubar{
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
-}
-ul.articleList{
-	list-style: none;
-	margin: 0px;
-	padding: 0px;
-}
+div.body {
+  width: 100%; }
 
-ul.menubar li{
-	display: inline;
-}
+ul.menubar, ul.articleList {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+ul.menubar li {
+  display: inline; }

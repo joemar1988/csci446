@@ -1,0 +1,28 @@
+.heading
+  %h1 Articl.es
+  %h3 ...with a name .com hipsters love!
+%ul.menubar
+  %li= link_to "articles", articles_path
+  %li= link_to "authors", authors_path
+%h2 All the World's Articles
+= link_to image_tag('add.png', :border => 0), new_article_path, :title => "create a new article"
+= link_to 'Create an Article', new_article_path, :title => "create a new article"
+.body
+  %table.complete
+    %tr
+      %th Title
+      %th Author Name
+      %th Body
+      %th Creation Date
+    - @articles.each do |article|
+      %tr
+        %td= h article.title
+        %td= h article.author
+        %td= h truncate(article.description, :length=>32)
+        %td= h article.created_at.strftime("%A, %b. %d, %Y")
+        %td
+          = link_to image_tag('magnifier.png', :border => 0), article, :title => "view this article"
+          = link_to image_tag('database_edit.png', :border => 0), edit_article_path(article), :title => "edit this article"
+          = link_to image_tag('database_delete.png', :border => 0), article, :confirm => 'Are you sure?', :method => :delete, :title => "delete this article"
+= will_paginate @articles
+%h3= h pluralize(@num_articles, 'article')
