@@ -1,28 +1,19 @@
-<h1>Listing users</h1>
-
-<table>
-  <tr>
-    <th>Username</th>
-    <th>Password</th>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Email</th>
-  </tr>
-
-<% @users.each do |user| %>
-  <tr>
-    <td><%=h user.username %></td>
-    <td><%=h user.password %></td>
-    <td><%=h user.firstname %></td>
-    <td><%=h user.lastname %></td>
-    <td><%=h user.email %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New user', new_user_path %>
+%ul.menubar
+  %li= link_to "login", 
+  %li= link_to "register", new_user_path 
+.heading
+  %h1 Gamez Admin
+%h2 Users
+.body
+  %table.complete
+    %tr
+      %th Name
+      %th Username
+      %th Last Login
+	  %th Number of Games
+    - @users.each do |article|
+      %tr
+        %td= h user.firstname user.lastname
+        %td= h user.username
+        %td= h article.updated_at.strftime("%A, %b. %d, %Y")
+        = will_paginate @users
