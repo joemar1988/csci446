@@ -1,8 +1,11 @@
 class UsersController < ApplicationController
-  # GET /users
-  # GET /users.xml
+
+  before_filter :previous_link, :only => [:edit]
+
   def index
-    @users = User.all
+    @num_users = User.count
+	@users = User.paginate(:page => params[:page])
+    @user_games = Game.find_all_by_user_id(params[:id])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -10,9 +13,8 @@ class UsersController < ApplicationController
     end
   end
 
-  # GET /users/1
-  # GET /users/1.xml
   def show
+  	@user_games = Game.find_all_by_user_id(params[:id])
     @user = User.find(params[:id])
 
     respond_to do |format|
@@ -21,8 +23,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # GET /users/new
-  # GET /users/new.xml
   def new
     @user = User.new
 
@@ -32,13 +32,10 @@ class UsersController < ApplicationController
     end
   end
 
-  # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
   end
 
-  # POST /users
-  # POST /users.xml
   def create
     @user = User.new(params[:user])
 
@@ -53,8 +50,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # PUT /users/1
-  # PUT /users/1.xml
   def update
     @user = User.find(params[:id])
 
@@ -69,8 +64,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # DELETE /users/1
-  # DELETE /users/1.xml
   def destroy
     @user = User.find(params[:id])
     @user.destroy
@@ -80,4 +73,20 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def login
+    @users = User.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @users }
+    end
+  end
+  
+  private
+  
+  def previous_link
+	session[:redirect] = request.referer
+  end
+  
 end

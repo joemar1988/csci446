@@ -1,0 +1,15 @@
+%ul.menubar
+  %li= link_to "login"
+  %li= link_to "register", new_user_path 
+.heading
+  %h1 Gamez
+  %h3 Login
+.body
+  %p
+	%b 	= link_to "register", new_user_path 
+  %p
+    %b Username: 
+	    = f.text_field
+  %p
+    %b Password:
+	    = f.text_field

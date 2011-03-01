@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
-	validates_presence_of :firstname, :lastname, :username, :password
+	
+	validates_presence_of :username, :password
+	
 	has_many :games
 
 	has_attached_file :photo, 

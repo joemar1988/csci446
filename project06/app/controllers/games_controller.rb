@@ -1,8 +1,11 @@
 class GamesController < ApplicationController
-  # GET /games
-  # GET /games.xml
+
+  before_filter :previous_link, :only => [:edit]
+  before_filter :load_users, :only => [:new, :edit, :update]
+  
   def index
-    @games = Game.all
+    @num_games = Game.count
+	@games = Game.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -10,8 +13,6 @@ class GamesController < ApplicationController
     end
   end
 
-  # GET /games/1
-  # GET /games/1.xml
   def show
     @game = Game.find(params[:id])
 
@@ -21,8 +22,6 @@ class GamesController < ApplicationController
     end
   end
 
-  # GET /games/new
-  # GET /games/new.xml
   def new
     @game = Game.new
 
@@ -32,13 +31,10 @@ class GamesController < ApplicationController
     end
   end
 
-  # GET /games/1/edit
   def edit
     @game = Game.find(params[:id])
   end
 
-  # POST /games
-  # POST /games.xml
   def create
     @game = Game.new(params[:game])
 
@@ -53,8 +49,6 @@ class GamesController < ApplicationController
     end
   end
 
-  # PUT /games/1
-  # PUT /games/1.xml
   def update
     @game = Game.find(params[:id])
 
@@ -69,8 +63,6 @@ class GamesController < ApplicationController
     end
   end
 
-  # DELETE /games/1
-  # DELETE /games/1.xml
   def destroy
     @game = Game.find(params[:id])
     @game.destroy
@@ -80,4 +72,15 @@ class GamesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  private
+  
+  def previous_link
+	session[:redirect] = request.referer
+  end
+  
+  def load_users
+	@users = Game.all
+  end
+  
 end

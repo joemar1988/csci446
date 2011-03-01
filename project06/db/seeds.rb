@@ -5,3 +5,6 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+title = "Just a Friend"
+rating = "Amazing"
+Game.create( :title => title , :rating => rating , :user => User.new( :name => 'Joe Martinez'));
