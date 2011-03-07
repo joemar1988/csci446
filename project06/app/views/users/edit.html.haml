@@ -1,39 +1,34 @@
-%ul.headbar
-  %li= link_to "login"
-  %li= link_to "register", new_user_path 
-.heading
-  %h1= link_to "Gamez", games_path
-  %h3 Edit User
-%ul.menubar
-= link_to image_tag('arrow_left.png', :border => 0), :back, :title => "return to previous page"
-= link_to 'back', :back, :title => "return to previous page"
-%h2
-  Editing "#{h @user.name}"
-- form_for(@user, :html => {:multipart => true}) do |f|
-  = f.error_messages
-  %p
-    = f.label :username
-    %br/
-    = f.text_field :username
-  %p
-    = f.label :password
-    %br/
-    = f.text_field :password
-  %p
-    = f.label :firstname
-    %br/
-    = f.text_field :firstname
-  %p
-    = f.label :lastname
-    %br/
-    = f.text_field :lastname
-  %p
-    = f.label :email
-    %br/
-    = f.text_field :email
-  %p
-    = f.label :photo
-    %br/
-    = f.file_field :photo
-  %p
-    = f.submit 'Save Changes', :title => "save and return to previous page (or errors are displayed)"
+%h1 Registration
+= form_for @user do |f|
+  - if @user.errors.any?
+    .error_messages
+      %h2 Form is invalid
+      %ul
+        - for message in @user.errors.full_messages
+          %li
+            = messages
+       %p
+        = f.label :Firstname
+        %br/
+        = f.text_field :Firstname
+       %p
+        = f.label :Lastname
+        %br/
+        = f.text_field :Lastname
+       %p
+        = f.label :username
+        %br/
+        = f.text_field :username
+       %p
+        = f.label :email
+        %br/
+        = f.text_field :email
+       %p
+        = f.label :password
+        %br/
+        = f.password_field :password
+       %p
+        = f.label :password_confirmation
+        %br/
+        = f.password_field :password_confirmation
+       %p.button= f.submit

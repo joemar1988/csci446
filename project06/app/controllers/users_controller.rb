@@ -1,68 +1,37 @@
 class UsersController < ApplicationController
 
   before_filter :previous_link, :only => [:edit]
-
-  def index
-    @num_users = User.count
-	@users = User.paginate(:page => params[:page])
-    @user_games = Game.find_all_by_user_id(params[:id])
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @users }
-    end
-  end
-
-  def show
-  	@user_games = Game.find_all_by_user_id(params[:id])
-    @user = User.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @user }
-    end
-  end
-
+  filter_resource_access
+  
   def new
     @user = User.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @user }
-    end
   end
 
   def edit
-    @user = User.find(params[:id])
+    @user = current_user
   end
+
 
   def create
     @user = User.new(params[:user])
-
-    respond_to do |format|
-      if @user.save
-        format.html { redirect_to(@user, :notice => 'User was successfully created.') }
-        format.xml  { render :xml => @user, :status => :created, :location => @user }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
-      end
+    if @user.save
+      flash[:notice] = "Registration successful."
+      redirect_to root_url
+    else
+      render :action => 'new'
     end
   end
 
   def update
-    @user = User.find(params[:id])
-
-    respond_to do |format|
-      if @user.update_attributes(params[:user])
-        format.html { redirect_to(@user, :notice => 'User was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
-      end
+    @user = current_user
+    if @user.update_attributes(params[:user])
+      flash[:notice] = "Successfully updated profile."
+      redirect_to root_url
+    else
+      render :action => 'edit'
     end
   end
+
 
   def destroy
     @user = User.find(params[:id])

@@ -1,5 +1,6 @@
 class GamesController < ApplicationController
 
+  filter_resource_access
   before_filter :previous_link, :only => [:edit]
   before_filter :load_users, :only => [:new, :edit, :update]
   
@@ -37,15 +38,12 @@ class GamesController < ApplicationController
 
   def create
     @game = Game.new(params[:game])
-
-    respond_to do |format|
-      if @game.save
-        format.html { redirect_to(@game, :notice => 'Game was successfully created.') }
-        format.xml  { render :xml => @game, :status => :created, :location => @game }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @game.errors, :status => :unprocessable_entity }
-      end
+    
+    if @game.save
+      flash[:notice] = "Game was successfully created."
+      redirect_to games_url
+    else
+      render :action => 'new'
     end
   end
 

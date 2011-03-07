@@ -1,0 +1,6 @@
+%p
+  %b Access level:
+  = h @role.access_level
+= link_to 'Edit', edit_role_path(@role)
+|
+\#{link_to 'Back', roles_path}

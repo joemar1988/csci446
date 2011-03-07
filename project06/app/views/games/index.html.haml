@@ -1,9 +1,15 @@
-%ul.menubar
-  %li= link_to "login"
-  %li= link_to "register", new_user_path 
+  -if permitted_to? :login, @user
+    .menubar
+      %p= link_to "login",  login_path
+      %p= link_to "register", new_user_path 
+  -else
+    .menubar
+      %p= link_to "edit", edit_user_path
+      %p= link_to "eogout", logout_path	  
+      
 .heading
   %h1= link_to "Gamez", games_path
-  %h3 View Games
+  %h3= View Games
 .body
   %table.complete
     %tr

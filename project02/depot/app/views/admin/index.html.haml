@@ -1,0 +1,7 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "content-type"}/
+  %body
+    %h1 Welcome
+    It's <%= Time.now %>
+    We have <%= pluralize(@total_orders, "order") %>.
