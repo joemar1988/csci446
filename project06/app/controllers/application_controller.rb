@@ -15,10 +15,10 @@ class ApplicationController < ActionController::Base
      Authorization.current_user = current_user
    end
   
-    def permission_denied
+   def permission_denied
       flash[:error]="DENIED! You do not have permission to view this page."
       redirect_to root_url
-    end
+   end
     
   private
     def current_user_session

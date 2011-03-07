@@ -7,5 +7,9 @@ authorization do
     has_permission_on :comments, :to => [:edit, :update]
   end
   
+  role :public do
+    has_permission_on :comments, :to => [:edit, :update]
+  end
+  
 end
 

@@ -1475,3 +1475,181 @@ NoMethodError (private method `current_user' called for #<UsersController:0x8d0d
 Rendered rescues/_trace (61.0ms)
 Rendered rescues/_request_and_response (1.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-07 07:04:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x88b0a68 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :users).
+
+NameError (undefined local variable or method `root_url' for #<UsersController:0x88ec930>):
+  app/controllers/application_controller.rb:20:in `permission_denied'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:128:in `send'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:128:in `filter_access_filter'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-07 07:04:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x86f1a50 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :users).
+
+NameError (undefined local variable or method `root_url' for #<UsersController:0x8724c78>):
+  app/controllers/application_controller.rb:20:in `permission_denied'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:128:in `send'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:128:in `filter_access_filter'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-07 07:04:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x8930fe8 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :users).
+
+NoMethodError (undefined method `root_url_url' for #<UsersController:0x8995f20>):
+  app/controllers/application_controller.rb:20:in `permission_denied'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:128:in `send'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:128:in `filter_access_filter'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-07 07:05:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x8743080 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :users).
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 94ms (View: 7, DB: 0) | 403 Forbidden [http://localhost/users]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-07 07:05:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x8b08528 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 93ms (View: 8, DB: 0) | 403 Forbidden [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-07 07:05:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x89f8b18 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 91ms (View: 4, DB: 0) | 403 Forbidden [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-07 07:07:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x88f5510 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 93ms (View: 5, DB: 0) | 403 Forbidden [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-07 07:34:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x86d4848 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 130ms (View: 7, DB: 0) | 403 Forbidden [http://localhost/games]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-03-07 07:34:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x864f0c0 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :users).
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 96ms (View: 7, DB: 0) | 403 Forbidden [http://localhost/users]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-07 07:34:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `password_confirmation=' for nil:NilClass) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Sign up as a new user
+2: - @user_sessions.password = @user_sessions.password_confirmation = nil
+3: = error_messages_for :user_sessions
+4: - form_for :user_sessions, :url => user_sessions_path do |f|
+5:   %p
+
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-07 07:48:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x8b15080 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 92ms (View: 4, DB: 0) | 403 Forbidden [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-07 07:49:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+
+NoMethodError (private method `current_user' called for #<GamesController:0x8aadd90>):
+  app/controllers/application_controller.rb:10
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
