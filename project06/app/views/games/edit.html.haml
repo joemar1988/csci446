@@ -1,0 +1,24 @@
+%ul.menubar
+  %li= link_to "login"
+  %li= link_to "register", new_user_path 
+.heading
+  %h1= link_to "Gamez", games_path
+  %h3 Edit Game
+%h2
+  Editing "#{h @game.title}"
+- form_for(@game) do |f|
+  = f.error_messages
+  %p
+    = f.label :title
+    %br/
+    = f.text_field :title
+  %p
+    = f.label :rating
+    %br/
+    = f.text_field :rating
+  %p
+    = f.label :creator
+    %br/
+    = f.text_field :creator
+  %p
+    = f.submit 'Save Changes', :title => "save and return to previous page (or errors are displayed)"

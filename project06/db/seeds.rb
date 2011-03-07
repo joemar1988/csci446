@@ -5,3 +5,5 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+Role.create([{ :access_level => "admin" },{ :access_level => "member" },{ :access_level => "guest" }]);

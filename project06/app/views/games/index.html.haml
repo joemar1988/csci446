@@ -1,0 +1,18 @@
+%ul.menubar
+  %li= link_to "login"
+  %li= link_to "register", new_user_path 
+.heading
+  %h1= link_to "Gamez", games_path
+  %h3 View Games
+.body
+  %table.complete
+    %tr
+      %th Title
+      %th Rating
+      %th Date Added
+    - @games.each do |article|
+      %tr
+        %td= h game.title
+        %td= h game.rating
+        %td= #{h @game.created_at.strftime("%A, %b. %d, %Y")}. by #{h @game.creator}
+        = will_paginate @games
