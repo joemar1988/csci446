@@ -6,6 +6,7 @@ one:
   firstname: MyString
   lastname: MyString
   email: MyString
+  roles_id: 1
 
 two:
   username: MyString
@@ -13,3 +14,4 @@ two:
   firstname: MyString
   lastname: MyString
   email: MyString
+  roles_id: 1
