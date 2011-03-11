@@ -1653,3 +1653,2186 @@ NoMethodError (private method `current_user' called for #<GamesController:0x8aad
 Rendered rescues/_trace (59.0ms)
 Rendered rescues/_request_and_response (1.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 10:36:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+
+NoMethodError (private method `current_user' called for #<GamesController:0x8688270>):
+  app/controllers/application_controller.rb:10
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 10:37:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x848bcb0 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 10:37:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x88a1ca8 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 10:37:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x876e838 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 10:37:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x8670c78 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 10:38:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x85b7590 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 10:39:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x8843058 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/games]
+
+
+Processing UserSessionsController#index (for 127.0.0.1 at 2011-03-11 10:39:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, and new):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 10:40:04) [GET]
+
+ActionController::RoutingError (No route matches "/user" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 10:40:07) [GET]
+
+ActionController::RoutingError (No route matches "/users" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 10:40:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `password_confirmation=' for nil:NilClass) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Sign up as a new user
+2: - @user_sessions.password = @user_sessions.password_confirmation = nil
+3: = error_messages_for :user_sessions
+4: - form_for :user_sessions, :url => user_sessions_path do |f|
+5:   %p
+
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 10:40:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `password_confirmation=' for nil:NilClass) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Sign up as a new user
+2: - @user_sessions.password = @user_sessions.password_confirmation = nil
+3: = error_messages_for :user_sessions
+4: - form_for :user_sessions, :url => user_sessions_path do |f|
+5:   %p
+
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('admin')[0m
+  [4;35;1mRole Create (0.0ms)[0m   [0mINSERT INTO "roles" ("access_level") VALUES('member')[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('guest')[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('admin')[0m
+  [4;35;1mRole Create (0.0ms)[0m   [0mINSERT INTO "roles" ("access_level") VALUES('member')[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('guest')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20110307030915)
+Migrating to Roles (20110307032352)
+Migrating to CreateRoles (20110307041757)
+Migrating to CreateGames (20110307044132)
+Migrating to AddAttachmentsPhotoToUser (20110307044817)
+Migrating to CreateUserSessions (20110307103121)
+  [4;36;1mSQL (15.6ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("user_sessions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('admin')[0m
+  [4;35;1mRole Create (15.6ms)[0m   [0mINSERT INTO "roles" ("access_level") VALUES('member')[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('guest')[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('admin')[0m
+  [4;35;1mRole Create (0.0ms)[0m   [0mINSERT INTO "roles" ("access_level") VALUES('member')[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('guest')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUserSessions (20110307103121)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (31.2ms)[0m   [0mDROP TABLE "user_sessions"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20110307103121'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20110307030915)
+Migrating to Roles (20110307032352)
+Migrating to CreateRoles (20110307041757)
+Migrating to CreateGames (20110307044132)
+Migrating to AddAttachmentsPhotoToUser (20110307044817)
+Migrating to CreateUserSessions (20110307103121)
+  [4;36;1mSQL (15.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddAttachmentsPhotoToUser (20110307044817)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_size" integer, "photo_updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_size" integer, "photo_updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20110307044817'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("games")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20110307030915)
+Migrating to Roles (20110307032352)
+Migrating to CreateRoles (20110307041757)
+Migrating to CreateGames (20110307044132)
+Migrating to AddAttachmentsPhotoToUser (20110307044817)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mALTER TABLE "users" ADD "photo_file_name" varchar(255)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "users" ADD "photo_content_type" varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mALTER TABLE "users" ADD "photo_file_size" integer[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "users" ADD "photo_updated_at" datetime[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110307044817')[0m
+Migrating to CreateUserSessions (20110307103121)
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "users" ADD "persistence_token" varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "user_sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110307103121')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("games")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("user_sessions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('admin')[0m
+  [4;35;1mRole Create (0.0ms)[0m   [0mINSERT INTO "roles" ("access_level") VALUES('member')[0m
+  [4;36;1mRole Create (0.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('guest')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'email@mines.edu') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'administrator') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3ddd0e5a89efed58fa1b1c1dfaba43b47055e429e487213ca049978f5b46199dae6e305104157fd81f6c863b345b17a077b8f2f09a3c62bb4cdfb96b24246e5c') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'email@mines.edu') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'administrator') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("created_at", "photo_file_size", "updated_at", "photo_file_name", "username", "photo_content_type", "lastname", "photo_updated_at", "firstname", "persistence_token", "password", "roles_id", "email") VALUES('2011-03-11 17:59:39', NULL, '2011-03-11 17:59:39', NULL, 'administrator', NULL, 'last', NULL, 'first', '3ddd0e5a89efed58fa1b1c1dfaba43b47055e429e487213ca049978f5b46199dae6e305104157fd81f6c863b345b17a077b8f2f09a3c62bb4cdfb96b24246e5c', NULL, 1, 'email@mines.edu')[0m
+[paperclip] Saving attachments.
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:00:22) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `password_confirmation=' for nil:NilClass) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Sign up as a new user
+2: - @user_sessions.password = @user_sessions.password_confirmation = nil
+3: = error_messages_for :user_sessions
+4: - form_for :user_sessions, :url => user_sessions_path do |f|
+5:   %p
+
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:09:28) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:   - if [:member,@user].errors.any?
+4:     .error_messages
+5:       %h2 Form is invalid
+
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:12:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:   - if [:member,@user].errors.any?
+4:     .error_messages
+5:       %h2 Form is invalid
+
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (175.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:13:32) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:   - if [:member,@user].errors.any?
+4:     .error_messages
+5:       %h2 Form is invalid
+
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (163.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:17:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:   - if [:member,@user].errors.any?
+4:     .error_messages
+5:       %h2 Form is invalid
+
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (159.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:17:54) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:   - if [:member,@user].errors.any?
+4:     .error_messages
+5:       %h2 Form is invalid
+
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (162.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:21:02) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:   - if [:member,@user].errors.any?
+4:     .error_messages
+5:       %h2 Form is invalid
+
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:22:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:   - if [:member,@user].errors.any?
+4:     .error_messages
+5:       %h2 Form is invalid
+
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (76.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:23:55) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2:   %p
+3:     = f.label :Firstname
+4:     %br/
+5:     = f.text_field :Firstname
+
+    app/views/user_sessions/new.html.haml:2
+    haml (3.0.25) lib/haml/precompiler.rb:781:in `render_tag'
+    haml (3.0.25) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.25) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:24:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x8c0d798>) on line #3 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: %p
+3:   = f.label :Firstname
+4:   %br/
+5:   = f.text_field :Firstname
+6: %p
+
+    app/views/user_sessions/new.html.haml:3:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:25:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+ERROR: compiling _run_haml_app47views47user_sessions47new46html46haml RAISED compile error
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:28: syntax error, unexpected kENSURE, expecting kEND
+...>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:31: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_haml_app47views47user_sessions47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_html=>false, :attr_wrapper=>"'", :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Registration</h1>\n", 0, false);
+ form_for ([:member,@user]) do |f|;
+_hamlout.push_text("<p>\n  #{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.label :Firstname
+));}\n  <br />\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :Firstname
+));}\n</p>\n<p>\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :Lastname
+));}\n  <br />\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :Lastname
+));}\n</p>\n<p>\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :username
+));}\n  <br />\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :username
+));}\n</p>\n<p>\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :email
+));}\n  <br />\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :email
+));}\n</p>\n<p>\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :password
+));}\n  <br />\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.password_field :password
+));}\n</p>\n<p>\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :password_confirmation
+));}\n  <br />\n  #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.password_field :password_confirmation
+));}\n</p>\n<p class='button'>#{_hamlout.format_script_false_true_false_false_false_true_false((f.submit
+));}</p>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:31:in `compile!'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+c:/Ruby187/lib/ruby/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+c:/Ruby187/lib/ruby/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:28: syntax error, unexpected kENSURE, expecting kEND
+...>\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.u...
+                              ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:31: syntax error, unexpected $end, expecting kEND) on line #28 of app/views/user_sessions/new.html.haml:
+25:   %br/
+26:   = f.password_field :password_confirmation
+27: %p.button= f.submit
+
+    app/views/user_sessions/new.html.haml:31:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:26:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:     %p
+4:         = f.label :Firstname
+5:         %br/
+
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:28:28) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:   - if [:member,@user].errors.any?
+4:     .error_messages
+5:       %h2 Form is invalid
+
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:30:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #2 of app/views/user_sessions/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:   - if [:member,@user].errors.any?
+4:     .error_messages
+5:       %h2 Form is invalid
+
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (166.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:32:34) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0x8b190e8>) on line #1 of app/views/user_sessions/new.html.haml:
+1: - title "Log in"
+2: %p
+3:   Don't have an account? #{link_to "Sign up!", signup_path}
+4: - form_for @user_session do |f|
+
+    app/views/user_sessions/new.html.haml:1:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:33:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined local variable or method `signup_path' for #<ActionView::Base:0x881cda8>) on line #3 of app/views/user_sessions/new.html.haml:
+1: %h1 Log in
+2: %p
+3:   Don't have an account? #{link_to "Sign up!", signup_path}
+4: - form_for @user_session do |f|
+5:   = f.error_messages
+6:   %p
+
+    app/views/user_sessions/new.html.haml:3:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:35:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Indenting at the beginning of the document is illegal.) on line #1 of app/views/user_sessions/new.html.haml:
+1:   -if permitted_to? :login, @user
+2:     .menubar
+3:       %p= link_to "login",  login_path
+4:       %p= link_to "register", new_user_path 
+
+    app/views/user_sessions/new.html.haml:1
+    haml (3.0.25) lib/haml/precompiler.rb:167:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (169.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:35:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (Inconsistent indentation: 6 spaces were used for indentation, but the rest of the document was indented using 4 spaces.) on line #3 of app/views/user_sessions/new.html.haml:
+1: -if permitted_to? :login, @user
+2:     .menubar
+3:       %p= link_to "login",  login_path
+4:       %p= link_to "register", new_user_path 
+5: -else
+6:     .menubar
+
+    app/views/user_sessions/new.html.haml:3
+    haml (3.0.25) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.25) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.25) lib/haml/precompiler.rb:1048:in `block_opened?'
+    haml (3.0.25) lib/haml/precompiler.rb:776:in `render_tag'
+    haml (3.0.25) lib/haml/precompiler.rb:845:in `render_div'
+    haml (3.0.25) lib/haml/precompiler.rb:210:in `process_line'
+    haml (3.0.25) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:36:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+ERROR: compiling _run_haml_app47views47user_sessions47new46html46haml RAISED compile error
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:11: syntax error, unexpected kIN, expecting ')'
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: unknown regexp options - dv
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                  ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                             ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                                      ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                                             ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:15: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n", -1, false); form_for @user_session do |f|;
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:19: syntax error, unexpected $undefined
+));}\n    <br />\n    #{
+                 ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:21: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n  <p>\n    #{
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:23: syntax error, unexpected $undefined
+));}\n    <br />\n    #{
+                 ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:25: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n  <p>#{_hamlout.form...
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: unknown regexp option - p
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: syntax error, unexpected $undefined
+));}</p>\n", 0, false);end;_hamlout.pus...
+         ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: unterminated string meets end of file
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _run_haml_app47views47user_sessions47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_html=>false, :attr_wrapper=>"'", :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;;if permitted_to? :login, @user;
+_hamlout.push_text("<div class='menubar'>\n  <p>#{
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_true_false_false_false_true_false((link_to "login",  login_path
+));}</p>\n  <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to "register", new_user_path
+));}</p>\n</div>\n", -1, false);else;
+_hamlout.push_text("<div class='menubar'>\n  <p>#{
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_true_false_false_false_true_false((link_to "edit", edit_user_path
+));}</p>\n  <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to "eogout", logout_path
+));}</p>\n</div>\n<div class='heading'>\n  <h1>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to "Gamez", games_path
+));}</h1>\n  <h3>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((Log in
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(("Don't have an account? #{link_to "Sign up!", signup_path}"
+));}\n  </p>\n", -1, false); form_for @user_session do |f|;
+_hamlout.push_text("  #{_hamlout.format_script_false_false_false_false_false_true_false(( f.error_messages
+));}\n  <p>\n    #{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.label :username
+));}\n    <br />\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :username
+));}\n  </p>\n  <p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :password
+));}\n    <br />\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.password_field :password
+));}\n  </p>\n  <p>#{_hamlout.format_script_false_true_false_false_false_true_false((f.submit "Log in"
+));}</p>\n", 0, false);end;_hamlout.push_text("</div>\n", -1, false);end;_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26:in `compile!'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+c:/Ruby187/lib/ruby/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+c:/Ruby187/lib/ruby/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:11: syntax error, unexpected kIN, expecting ')'
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: unknown regexp options - dv
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                  ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                             ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                                      ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                                             ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:15: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n", -1, false); form_for @user_session do |f|;
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:19: syntax error, unexpected $undefined
+));}\n    <br />\n    #{
+                 ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:21: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n  <p>\n    #{
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:23: syntax error, unexpected $undefined
+));}\n    <br />\n    #{
+                 ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:25: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n  <p>#{_hamlout.form...
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: unknown regexp option - p
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: syntax error, unexpected $undefined
+));}</p>\n", 0, false);end;_hamlout.pus...
+         ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: unterminated string meets end of file
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR) on line #11 of app/views/user_sessions/new.html.haml:
+8:         %p= link_to "eogout", logout_path	  
+9:     .heading
+10:         %h1= link_to "Gamez", games_path
+11:         %h3= Log in
+12:     .body
+13:         %p
+14:             Don't have an account? #{link_to "Sign up!", signup_path}
+
+    app/views/user_sessions/new.html.haml:26:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:40:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+ERROR: compiling _run_haml_app47views47user_sessions47new46html46haml RAISED compile error
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:11: syntax error, unexpected kIN, expecting ')'
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: unknown regexp options - dv
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                  ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                             ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                                      ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                                             ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:15: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n", -1, false); form_for @user_session do |f|;
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:19: syntax error, unexpected $undefined
+));}\n    <br />\n    #{
+                 ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:21: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n  <p>\n    #{
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:23: syntax error, unexpected $undefined
+));}\n    <br />\n    #{
+                 ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:25: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n  <p>#{_hamlout.form...
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: unknown regexp option - p
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: syntax error, unexpected $undefined
+));}</p>\n", 0, false);end;_hamlout.pus...
+         ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: unterminated string meets end of file
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _run_haml_app47views47user_sessions47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_html=>false, :attr_wrapper=>"'", :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :encoding=>nil});_erbout = _hamlout.buffer;__in_erb_template = true;;if permitted_to? :login, @user;
+_hamlout.push_text("<div class='menubar'>\n  <p>#{
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_true_false_false_false_true_false((link_to "login",  login_path
+));}</p>\n  <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to "register", new_user_path
+));}</p>\n</div>\n", -1, false);else;
+_hamlout.push_text("<div class='menubar'>\n  <p>#{
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_true_false_false_false_true_false((link_to "edit", edit_user_path
+));}</p>\n  <p>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to "eogout", logout_path
+));}</p>\n</div>\n<div class='heading'>\n  <h1>#{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to "Gamez", games_path
+));}</h1>\n  <h3>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((Log in
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(("Don't have an account? #{link_to "Sign up!", signup_path}"
+));}\n  </p>\n", -1, false); form_for @user_session do |f|;
+_hamlout.push_text("  #{_hamlout.format_script_false_false_false_false_false_true_false(( f.error_messages
+));}\n  <p>\n    #{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_false_false_true_false(( f.label :username
+));}\n    <br />\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :username
+));}\n  </p>\n  <p>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.label :password
+));}\n    <br />\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( f.password_field :password
+));}\n  </p>\n  <p>#{_hamlout.format_script_false_true_false_false_false_true_false((f.submit "Log in"
+));}</p>\n", 0, false);end;_hamlout.push_text("</div>\n", -1, false);end;_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26:in `compile!'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render_without_haml'
+c:/Ruby187/lib/ruby/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render_without_haml'
+c:/Ruby187/lib/ruby/gems/1.8/gems/haml-3.0.25/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/haml-3.0.25/rails/../lib/sass/plugin/rack.rb:41:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby187/lib/ruby/gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby187/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:11: syntax error, unexpected kIN, expecting ')'
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: unknown regexp options - dv
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                  ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                             ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                                      ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:12: syntax error, unexpected $undefined
+));}</h3>\n</div>\n<div class='body'>\n  <p>\n    #{
+                                             ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:15: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n", -1, false); form_for @user_session do |f|;
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:19: syntax error, unexpected $undefined
+));}\n    <br />\n    #{
+                 ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:21: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n  <p>\n    #{
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:23: syntax error, unexpected $undefined
+));}\n    <br />\n    #{
+                 ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:25: syntax error, unexpected '}', expecting ')'
+));}\n  </p>\n  <p>#{_hamlout.form...
+    ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: unknown regexp option - p
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: syntax error, unexpected $undefined
+));}</p>\n", 0, false);end;_hamlout.pus...
+         ^
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: unterminated string meets end of file
+c:/Users/Joe/Desktop/cs446/src/project06/app/views/user_sessions/new.html.haml:26: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR) on line #11 of app/views/user_sessions/new.html.haml:
+8:     %p= link_to "eogout", logout_path	  
+9:   .heading
+10:     %h1= link_to "Gamez", games_path
+11:     %h3= Log in
+12:   .body
+13:     %p
+14:       Don't have an account? #{link_to "Sign up!", signup_path}
+
+    app/views/user_sessions/new.html.haml:26:in `compile!'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:41:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined local variable or method `edit_user_path' for #<ActionView::Base:0x87a8ca8>) on line #7 of app/views/user_sessions/new.html.haml:
+4:     %p= link_to "register", new_user_path 
+5: -else
+6:   .menubar
+7:     %p= link_to "edit", edit_user_path
+8:     %p= link_to "eogout", logout_path	  
+9:   .heading
+10:     %h1= link_to "Gamez", games_path
+
+    app/views/user_sessions/new.html.haml:7:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (74.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:41:52) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined local variable or method `edit_user_path' for #<ActionView::Base:0x88f7b20>) on line #7 of app/views/user_sessions/new.html.haml:
+4:     %p= link_to "register", new_user_path 
+5: -else
+6:   .menubar
+7:     %p= link_to "edit", [:member,edit_user_path]
+8:     %p= link_to "logout", logout_path	  
+9:   .heading
+10:     %h1= link_to "Gamez", games_path
+
+    app/views/user_sessions/new.html.haml:7:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (158.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:43:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined local variable or method `edit_user_path' for #<ActionView::Base:0x8a62ee0>) on line #7 of app/views/user_sessions/new.html.haml:
+4:     %p= link_to "register", new_user_path 
+5: -else
+6:   .menubar
+7:     %p= link_to "edit", edit_user_path
+8:     %p= link_to "logout", logout_path	  
+9:   .heading
+10:     %h1= link_to "Gamez", games_path
+
+    app/views/user_sessions/new.html.haml:7:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:44:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined local variable or method `games_path' for #<ActionView::Base:0x87ace00>) on line #2 of app/views/user_sessions/new.html.haml:
+1: .heading
+2:   %h1= link_to "Gamez", games_path
+3:   %h3= "Log in"
+4: .body
+5:   %p
+
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (73.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:44:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x890b6c8>) on line #5 of app/views/user_sessions/new.html.haml:
+2:   %h3= "Log in"
+3: .body
+4:   %p
+5:     = f.label :username
+6:     %br/
+7:     = f.text_field :username
+8:   %p
+
+    app/views/user_sessions/new.html.haml:5:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (159.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:45:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `logged_in?' for #<ActionView::Base:0x8b050f0>) on line #10 of app/views/layouts/application.html.haml:
+7:   %body
+8:     #container
+9:       #user_status
+10:         - if logged_in?
+11:           Welcome #{h current_user.username}! Not you?
+12:           \#{link_to "Log out", logout_path}
+13:         - else
+
+    app/views/layouts/application.html.haml:10:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 11:47:08) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 173ms (View: 100, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 11:47:15) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+
+NoMethodError (undefined method `valid_password?' for #<User:0x8901360>):
+  authlogic (2.1.6) lib/authlogic/session/password.rb:191:in `send'
+  authlogic (2.1.6) lib/authlogic/session/password.rb:191:in `validate_by_password'
+  authlogic (2.1.6) lib/authlogic/session/callbacks.rb:83:in `validate'
+  authlogic (2.1.6) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.6) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:12:in `create'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (152.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 11:54:56) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+
+NoMethodError (undefined method `valid_password?' for #<User:0x895e840>):
+  authlogic (2.1.6) lib/authlogic/session/password.rb:191:in `send'
+  authlogic (2.1.6) lib/authlogic/session/password.rb:191:in `validate_by_password'
+  authlogic (2.1.6) lib/authlogic/session/callbacks.rb:83:in `validate'
+  authlogic (2.1.6) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.6) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:12:in `create'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 11:56:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/games
+Rendering games/index
+
+ActionView::TemplateError (Indenting at the beginning of the document is illegal.) on line #1 of app/views/games/index.html.haml:
+1:   -if permitted_to? :login, @user
+2:     .menubar
+3:       %p= link_to "login",  login_path
+4:       %p= link_to "register", new_user_path 
+
+    app/views/games/index.html.haml:1
+    haml (3.0.25) lib/haml/precompiler.rb:167:in `precompile'
+    haml (3.0.25) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.0.25) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/games_controller.rb:11:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 11:57:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (1.0ms)[0m   [0mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/games
+Rendering games/index
+
+ActionView::TemplateError (undefined local variable or method `edit_user_path' for #<ActionView::Base:0x882d860>) on line #7 of app/views/games/index.html.haml:
+4:     %p= link_to "register", new_user_path 
+5: -else
+6:   .menubar
+7:     %p= link_to "edit", edit_user_path
+8:     %p= link_to "eogout", logout_path	  
+9:     
+10: .heading
+
+    app/views/games/index.html.haml:7:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/games_controller.rb:11:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (180.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 11:58:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (1.0ms)[0m   [0mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/games
+Rendering games/index
+
+ActionView::TemplateError (undefined local variable or method `edit_user_path' for #<ActionView::Base:0x8a29d30>) on line #7 of app/views/games/index.html.haml:
+4:     %p= link_to "register", new_user_path 
+5: -else
+6:   .menubar
+7:     %p= link_to "edit", [:admin, edit_user_path]
+8:     %p= link_to "eogout", logout_path	  
+9:     
+10: .heading
+
+    app/views/games/index.html.haml:7:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/games_controller.rb:11:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 11:59:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (1.0ms)[0m   [0mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/games
+Rendering games/index
+
+ActionView::TemplateError (undefined local variable or method `games_path' for #<ActionView::Base:0x8c9cd90>) on line #10 of app/views/games/index.html.haml:
+7:     %p= link_to "logout", logout_path	  
+8:     
+9: .heading
+10:   %h1= link_to "Gamez", games_path
+11:   %h3= View Games
+12: .body
+13:   %table.complete
+
+    app/views/games/index.html.haml:10:in `_run_haml_app47views47games47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/games_controller.rb:11:in `index'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 12:01:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (1.0ms)[0m   [0mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 168ms (View: 51, DB: 1) | 200 OK [http://localhost/games]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 12:01:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/game.css" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-11 12:02:05) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 87ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 12:02:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 86ms (View: 12, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 12:02:17) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+
+NoMethodError (undefined method `valid_password?' for #<User:0x8825148>):
+  authlogic (2.1.6) lib/authlogic/session/password.rb:191:in `send'
+  authlogic (2.1.6) lib/authlogic/session/password.rb:191:in `validate_by_password'
+  authlogic (2.1.6) lib/authlogic/session/callbacks.rb:83:in `validate'
+  authlogic (2.1.6) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.6) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:12:in `create'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 12:02:26) [GET]
+
+ActionController::RoutingError (No route matches "/users" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 12:02:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (1.0ms)[0m   [0;1mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 143ms (View: 17, DB: 2) | 200 OK [http://localhost/games]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 12:02:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/game.css" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 12:02:43) [GET]
+
+ActionController::RoutingError (No route matches "/users" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 12:02:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/users"}
+
+SyntaxError (c:/Users/Joe/Desktop/cs446/src/project06/app/models/admin.rb:13: syntax error, unexpected kEND, expecting $end):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (74.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 12:03:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/users"}
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `on' for Admin(Table doesn't exist):Class):
+  c:/Ruby187/lib/ruby/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/admin.rb:6
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 12:05:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/users"}
+
+LoadError (Expected c:/Users/Joe/Desktop/cs446/src/project06/app/controllers/admin/users_controller.rb to define Admin::UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2011-03-11 12:06:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/users"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x8798ac0 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :admin_users).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 91ms (DB: 0) | 302 Found [http://localhost/admin/users]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 12:06:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (1.0ms)[0m   [0mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 127ms (View: 14, DB: 1) | 200 OK [http://localhost/games]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 12:06:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/game.css" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 12:08:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/users"}
+
+LoadError (Expected c:/Users/Joe/Desktop/cs446/src/project06/app/controllers/admin/users_controller.rb to define Admin::UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::UsersController#index (for 127.0.0.1 at 2011-03-11 12:08:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/users"}
+Permission denied: No matching rules found for index for #<Authorization::GuestUser:0x8788098 @role_symbols=[:guest]> (roles [:guest], privileges [:index], context :admin_users).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 92ms (DB: 0) | 302 Found [http://localhost/admin/users]

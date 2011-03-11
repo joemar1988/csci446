@@ -1,0 +1,24 @@
+#content
+  .title
+    %h1= link_to @title, root_url
+  
+  -if permitted_to? :login, @user
+    .pub_nav 
+      %p= link_to "Edit", root_url
+      %p= link_to "Logout", logout_path	  
+  -else
+    .pub_nav
+      %p= link_to "Register",register_path
+      %p= link_to "Login", login_path
+  
+  %table
+    %tr
+      %th Name
+      %th Rating
+    - @games.each do |game|
+      %tr
+        %td= h game.name
+        %td= h game.rating
+        %td= #{h @game.created_at.strftime("%A, %b. %d, %Y")}. by #{h @game.creator}
+        = will_paginate @games
+  %p= link_to "New Game", new_path

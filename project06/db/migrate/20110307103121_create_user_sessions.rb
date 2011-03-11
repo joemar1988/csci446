@@ -3,7 +3,7 @@ class CreateUserSessions < ActiveRecord::Migration
     create_table :user_sessions do |t|
       t.string :username
       t.string :password
-
+      add_column :users, :persistence_token, :string
       t.timestamps
     end
   end

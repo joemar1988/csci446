@@ -7,4 +7,4 @@
 #   Major.create(:name => 'Daley', :city => cities.first)
 
 Role.create([{ :access_level => "admin" },{ :access_level => "member" },{ :access_level => "guest" }]);
-User.create(:username => "administrator", :password => "password", :firstname => "first", :lastname => "last", :email => "email@mines.edu", roles_id => 1);
+User.create(:username => "administrator", :password => "password", :firstname => "first", :lastname => "last", :email => "email@mines.edu", :roles_id => 1);

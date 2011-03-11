@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Admin::UsersController < ApplicationController
 
   before_filter :previous_link, :only => [:edit]
   filter_resource_access

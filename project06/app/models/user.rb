@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-
     acts_as_authentic
 	attr_accessor :password
 
@@ -22,12 +21,11 @@ class User < ActiveRecord::Base
 	@@per_page = 10
     
 	def role_symbols
-        roles.map do |role|
-		  role.name.underscore.to_sym
-        end
+        [ role.name.downcase.to_sym ]
     end
 	
     def to_s
 		username
 	end
+    
 end

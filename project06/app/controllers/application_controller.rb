@@ -1,13 +1,13 @@
 class ApplicationController < ActionController::Base
 
-  include Authentication
+  #include Authentication
   protect_from_forgery 
   filter_parameter_logging :password
   helper :all 
-  helper_method :current_user
+  helper_method :current_user_session, :current_user
   before_filter :set_current_user
 
-  before_filter { |c| Authorization.current_user = c.current_user }
+  #before_filter { |c| Authorization.current_user = c.current_user }
   
   protected
   

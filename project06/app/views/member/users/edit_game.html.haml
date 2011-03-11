@@ -1,0 +1,26 @@
+#content
+  .title
+    %h1= link_to @title, games_path
+   
+  .pub_nav 
+    %p= link_to "Register", register_path
+    %p= link_to "Login", login_path
+	
+%h3
+  Editing "#{h @game.title}"
+- form_for(@game) do |f|
+  = f.error_messages
+  %p
+    = f.label :title
+    %br/
+    = f.text_field :title
+  %p
+    = f.label :rating
+    %br/
+    = f.text_field :rating
+  %p
+    = f.label :user
+    %br/
+    = f.text_field :user
+  %p
+    = f.submit , :title => "Update the Game."

@@ -1,0 +1,38 @@
+#content
+  .title
+    %h1= link_to @title, member_root_url
+   
+  .pub_nav 
+    %p= link_to "Edit Game", edit_game_path
+    %p= link_to "Logout", logout_path
+	
+%h3
+  Editing "#{h @user.name}"
+- form_for(@game) do |f|
+  = f.error_messages
+    %p
+      = f.label :Firstname
+      %br/
+      = f.text_field :Firstname
+    %p
+      = f.label :Lastname
+      %br/
+      = f.text_field :Lastname
+    %p
+      = f.label :username
+      %br/
+      = f.text_field :username
+    %p
+      = f.label :email
+      %br/
+      = f.text_field :email
+    %p
+      = f.label :password
+      %br/
+      = f.password_field :password
+    %p
+      = f.label :password_confirmation
+      %br/
+      = f.password_field :password_confirmation
+    %p
+      = f.submit , :title => "Update the Game."
