@@ -1,4 +1,4 @@
-class Admin::AdminController < ApplicationController
+class Admin::AdminsController < ApplicationController
 
   before_filter :require_all  
   filter_Access_to :all

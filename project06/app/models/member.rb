@@ -1,4 +1,4 @@
-class Admin < User
+class Member < User
   #NEED TO IMPLEMENT AUTH LOGIC FOR LOGIN
   attr_accessor :password
 	

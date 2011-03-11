@@ -7,15 +7,19 @@ class UserSessionsController < ApplicationController
     @user_session = UserSession.new
   end
 
-def create
-  @user_session = UserSession.new(params[:user_session])
-  if @user_session.save
-    flash[:notice] = "Successfully logged in."
-    redirect_to root_url
-  else
-    render :action => 'new'
+  def create
+    @user_session = UserSession.new(params[:user_session])
+    if @user_session.save
+      flash[:notice] = "Logged in successfully."
+      if User.find_by_username(@user_session.username).role.name == "admin"
+         redirect_to admin_root_url
+      else
+         redirect_to member_root_url
+      end
+    else
+      render :action => 'new'
+    end
   end
-end
 
 def destroy
   @user_session = UserSession.find

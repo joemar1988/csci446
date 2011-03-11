@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-    acts_as_authentic
+  acts_as_authentic
 	attr_accessor :password
 
 	validates_confirmation_of :password
@@ -7,11 +7,11 @@ class User < ActiveRecord::Base
 	validates_presence_of :username
 	validates_presence_of :firstname
 	validates_presence_of :lastname
-  	validates_presence_of :email
+  validates_presence_of :email
 	validates_uniqueness_of :email, :username
 	
 	has_many :games
-    has_many :roles
+  has_many :roles
 	has_attached_file :photo, 
 					  :styles => { :small => ["72x72", :gif], :mini => ["24x24", :gif]},
 					  :url => '/assets/:class/:attachment/:id/:style/:filename',
@@ -22,9 +22,9 @@ class User < ActiveRecord::Base
     
 	def role_symbols
         [ role.name.downcase.to_sym ]
-    end
+  end
 	
-    def to_s
+  def to_s
 		username
 	end
     

@@ -55,7 +55,7 @@ class Admin::UsersController < ApplicationController
   private
   
   def previous_link
-	session[:redirect] = request.referer
+    session[:redirect] = request.referer
   end
   
 end

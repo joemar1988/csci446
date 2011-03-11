@@ -1,4 +1,4 @@
-class Member::MemberController < ApplicationController
+class Member::MembersController < ApplicationController
   before_filter :require_no_user :only => [:new, :create]
   
   filter_access_to :require_user :only => [:update, :index]

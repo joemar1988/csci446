@@ -3,7 +3,7 @@ class Game < ActiveRecord::Base
 
 	belongs_to :user
 	
-    attr_accessible :name, :rating
+  attr_accessible :name, :rating
     
 	cattr_reader :per_page
 	@@per_page = 10

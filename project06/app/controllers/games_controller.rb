@@ -6,7 +6,7 @@ class GamesController < ApplicationController
   
   def index
     @num_games = Game.count
-	@games = Game.paginate(:page => params[:page])
+    @games = Game.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -74,11 +74,11 @@ class GamesController < ApplicationController
   private
   
   def previous_link
-	session[:redirect] = request.referer
+    session[:redirect] = request.referer
   end
   
   def load_users
-	@users = Game.all
+    @users = Game.all
   end
   
 end

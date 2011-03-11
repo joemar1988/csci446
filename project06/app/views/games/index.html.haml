@@ -2,18 +2,36 @@
   .menubar
     %p= link_to "login",  login_path
     %p= link_to "register", new_user_path 
+  .heading
+    %h1 Gamez
+  .body
+    %table.complete
+      %tr
+        %th Title
+        %th Rating
+        %th Date Added
+      - @games.each do |article|
+        %tr
+          %td= h game.title
+          %td= h game.rating
+          %td= #{h @game.created_at.strftime("%A, %b. %d, %Y")}. by #{h @game.creator}
+          = will_paginate @games
 -else
   .menubar
     %p= link_to "logout", logout_path	  
-.body
-  %table.complete
-    %tr
-      %th Title
-      %th Rating
-      %th Date Added
-    - @games.each do |article|
+  .heading
+    %h1= link_to 'Gamez', :root, :title => "gamez"
+    %p= link_to 'Create an Game', :new_game, :title => "create a new game"
+    %p= link_to 'View my Games', :new_game, :title => "view my games"
+  .body
+    %table.complete
       %tr
-        %td= h game.title
-        %td= h game.rating
-        %td= #{h @game.created_at.strftime("%A, %b. %d, %Y")}. by #{h @game.creator}
-        = will_paginate @games
+        %th Title
+        %th Rating
+        %th Date Added
+      - @games.each do |article|
+        %tr
+          %td= h game.title
+          %td= h game.rating
+          %td= #{h @game.created_at.strftime("%A, %b. %d, %Y")}. by #{h @game.creator}
+          = will_paginate @games

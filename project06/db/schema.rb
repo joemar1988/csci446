@@ -44,6 +44,9 @@ ActiveRecord::Schema.define(:version => 20110307103121) do
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
     t.string   "persistence_token"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "password_confirmation"
   end
 
 end
