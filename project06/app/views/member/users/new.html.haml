@@ -1,0 +1,27 @@
+%h1 Registration
+- form_for ([:member,@user]) do |f|
+  %p
+    = f.label :firstname
+    %br/
+    = f.text_field :firstname
+  %p
+    = f.label :lastname
+    %br/
+    = f.text_field :lastname
+  %p
+    = f.label :username
+    %br/
+    = f.text_field :username
+  %p
+    = f.label :email
+    %br/
+    = f.text_field :email
+  %p
+    = f.label :password
+    %br/
+    = f.password_field :password
+  %p
+    = f.label :password_confirmation
+    %br/
+    = f.password_field :password_confirmation
+  %p.button= f.submit

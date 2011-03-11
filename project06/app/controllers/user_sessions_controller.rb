@@ -11,10 +11,10 @@ class UserSessionsController < ApplicationController
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
       flash[:notice] = "Logged in successfully."
-      if User.find_by_username(@user_session.username).role.name == "admin"
-         redirect_to admin_root_url
+      if User.find_by_username(@user_session.username).roles.name == "admin"
+         redirect_to root_admin_path
       else
-         redirect_to member_root_url
+         redirect_to root_member_path
       end
     else
       render :action => 'new'

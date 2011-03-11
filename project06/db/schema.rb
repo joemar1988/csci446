@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20110307103121) do
   end
 
   create_table "roles", :force => true do |t|
-    t.string "access_level", :null => false
+    t.string "name"
   end
 
   create_table "user_sessions", :force => true do |t|
@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(:version => 20110307103121) do
 
   create_table "users", :force => true do |t|
     t.string   "username"
-    t.string   "password"
     t.string   "firstname"
     t.string   "lastname"
     t.string   "email"
@@ -46,7 +45,6 @@ ActiveRecord::Schema.define(:version => 20110307103121) do
     t.string   "persistence_token"
     t.string   "crypted_password"
     t.string   "password_salt"
-    t.string   "password_confirmation"
   end
 
 end

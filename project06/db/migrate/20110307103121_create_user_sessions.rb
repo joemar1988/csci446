@@ -3,8 +3,8 @@ class CreateUserSessions < ActiveRecord::Migration
     create_table :user_sessions do |t|
       t.string :username
       t.string :password
-      add_column :users, :password_confirmation, :string
-      
+      remove_column :roles, :access_level, :string
+      add_column :roles, :name, :string
       t.timestamps
     end
   end

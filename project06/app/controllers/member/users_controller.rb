@@ -1,6 +1,8 @@
-class Member::UsersController < Admin::AdminController
+class Member::UsersController < ApplicationController
 
- before_filter :previous_page, :only => [:edit]
+  before_filter :previous_page, :only => [:edit]
+  filter_resource_access
+  
   def new
 	@user = User.new
   end
@@ -41,6 +43,7 @@ class Member::UsersController < Admin::AdminController
   def edit
     @user = User.find(params[:id])
   end
+  
   private
    
   def previous_page

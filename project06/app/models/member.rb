@@ -1,4 +1,4 @@
-class Member < User
+class Member < ActiveRecord::Base
   #NEED TO IMPLEMENT AUTH LOGIC FOR LOGIN
   attr_accessor :password
 	

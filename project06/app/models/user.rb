@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
-  acts_as_authentic
-	attr_accessor :password
+  acts_as_authentic do |c|
+    c.validate_password_field = false
+  end
+
 
 	validates_confirmation_of :password
 	validates_presence_of :password, :on => :create
@@ -21,7 +23,7 @@ class User < ActiveRecord::Base
 	@@per_page = 10
     
 	def role_symbols
-        [ role.name.downcase.to_sym ]
+        [ roles.name.downcase.to_sym ]
   end
 	
   def to_s

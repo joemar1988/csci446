@@ -1,4 +1,4 @@
-class Admin < User
+class Admin < ActiveRecord::Base
   #NEED TO IMPLEMENT AUTH LOGIC FOR LOGIN
   attr_accessor :password
 	

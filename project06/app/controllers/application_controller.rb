@@ -1,15 +1,14 @@
 class ApplicationController < ActionController::Base
 
-  #include Authentication
+  include Authentication
   protect_from_forgery 
   filter_parameter_logging :password
   helper :all 
   helper_method :current_user_session, :current_user
   before_filter :set_current_user
 
-  #before_filter { |c| Authorization.current_user = c.current_user }
+  before_filter { |c| Authorization.current_user = c.current_user }
   
-  protected
   
    def set_current_user
      Authorization.current_user = current_user
@@ -20,7 +19,6 @@ class ApplicationController < ActionController::Base
       redirect_to root_url
    end
     
-  private
     def current_user_session
       return @current_user_session if defined?(@current_user_session)
       @current_user_session = UserSession.find
@@ -44,7 +42,7 @@ class ApplicationController < ActionController::Base
       if current_user
         store_location
         flash[:notice] = "You must be logged out to access this page"
-        redirect_to account_url
+        redirect_to root_path
         return false
       end
     end

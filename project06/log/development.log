@@ -5523,3 +5523,1610 @@ WARNING: Can't mass-assign these protected attributes: id
   [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '0f8f8d7348ceb5b838e4576ea93a7f250ce4d16fff67e1c04d0bb4eebb336b3d172eb58032263fdabc2f9b3b6726f38b95ee9319827afc1ca2bf35efdb515b0d') LIMIT 1[0m
   [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
   [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'member') LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:31:29) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+
+NoMethodError (private method `current_user' called for #<UserSessionsController:0x8606ac0>):
+  app/controllers/application_controller.rb:10
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (145.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:32:08) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 645ms (View: 136, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:32:16) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 129ms (View: 26, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:32:21) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 127ms (View: 25, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:33:15) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 113ms (View: 20, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 15:33:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (1.0ms)[0m   [0mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 331ms (View: 55, DB: 2) | 200 OK [http://localhost/games]
+
+
+Processing GamesController#new (for 127.0.0.1 at 2011-03-11 15:33:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"games"}
+Permission denied: No matching rules found for new for #<Authorization::GuestUser:0x8663e38 @role_symbols=[:guest]> (roles [:guest], privileges [:new], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 114ms (DB: 0) | 302 Found [http://localhost/new_game]
+
+
+Processing GamesController#new (for 127.0.0.1 at 2011-03-11 15:33:37) [GET]
+  Parameters: {"action"=>"new", "controller"=>"games"}
+Permission denied: No matching rules found for new for #<Authorization::GuestUser:0x8558ce8 @role_symbols=[:guest]> (roles [:guest], privileges [:new], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 125ms (DB: 0) | 302 Found [http://localhost/new_game]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-11 15:36:30) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 84ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 15:36:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 194ms (View: 19, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 15:36:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 147ms (View: 18, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-11 15:36:38) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+Redirected to http://localhost:3000/login
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 81ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 15:36:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 108ms (View: 22, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:37:36) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 213ms (View: 20, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:38:55) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `password_confirmation' for #<UserSession:0x87a1478>) on line #11 of app/views/user_sessions/new.html.haml:
+8:   %p
+9:     = f.label :password_confirmation
+10:     %br/
+11:     = f.password_field :password_confirmation
+12:   %p= f.submit "Log in"
+
+    app/views/user_sessions/new.html.haml:11:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/user_sessions_controller.rb:20:in `create'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUserSessions (20110307103121)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "user_sessions"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20110307103121'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20110307030915)
+Migrating to Roles (20110307032352)
+Migrating to CreateRoles (20110307041757)
+Migrating to CreateGames (20110307044132)
+Migrating to AddAttachmentsPhotoToUser (20110307044817)
+Migrating to CreateUserSessions (20110307103121)
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime, "persistence_token" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_confirmation" varchar(255)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime, "persistence_token" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_confirmation" varchar(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime, "persistence_token" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_confirmation" varchar(255)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime, "persistence_token" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_confirmation" varchar(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime, "persistence_token" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "password_confirmation" varchar(255)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime, "persistence_token" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime, "persistence_token" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "firstname" varchar(255), "lastname" varchar(255), "email" varchar(255), "roles_id" integer, "created_at" datetime, "updated_at" datetime, "photo_file_name" varchar(255), "photo_content_type" varchar(255), "photo_file_size" integer, "photo_updated_at" datetime, "persistence_token" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "user_sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110307103121')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("user_sessions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mRole Create (2.0ms)[0m   [0;1mINSERT INTO "roles" ("access_level") VALUES('admin')[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mRole Create (2.0ms)[0m   [0mINSERT INTO "roles" ("access_level") VALUES('member')[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'admin@mines.edu') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'administrator') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '484e8031f7701a2f1b822deb7c98e5558cfc01993cb58fe914bddafc16b4f51c3b7d02731f3c5bb5e48f4631c38fd74a9e32951909701268bdff46250be3b42f') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'admin@mines.edu') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'administrator') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'member') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'd122a57ec231121adb0fbd119e29771226f6f84b0daa71c1a39603dd53b5ce3fc9f5001835e3adcd2312d083196f3eacc316af749e22b02f044ff12c1ef398d2') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'member') LIMIT 1[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:47:15) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 642ms (View: 60, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:47:22) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 130ms (View: 27, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:47:27) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 200ms (View: 22, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:52:34) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 115ms (View: 20, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 15:52:42) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"administrator", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'administrator') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 127ms (View: 26, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 15:52:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 188ms (View: 45, DB: 1) | 200 OK [http://localhost/games]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:52:55) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 15:53:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 95ms (View: 18, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:53:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:53:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (167.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:54:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:54:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:54:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (167.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:57:51) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:57:54) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:58:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (142.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:58:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 15:58:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 94ms (View: 19, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:58:35) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 15:59:18) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:01:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (148.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:07:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:07:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (128.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 16:09:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"/user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 212ms (View: 135, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:10:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:12:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:12:59) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:13:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:16:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (131.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:16:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 16:17:37) [GET]
+
+ActionController::RoutingError (No route matches "/users/new" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 16:18:53) [GET]
+
+ActionController::RoutingError (No route matches "/users/new" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 16:18:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 206ms (View: 64, DB: 0) | 200 OK [http://localhost/games]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:19:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"member/users"}
+
+NameError (uninitialized constant Member::UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-03-11 16:19:59) [GET]
+  Parameters: {"action"=>"new", "controller"=>"member/users"}
+
+NameError (uninitialized constant Member::UsersController):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (170.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 16:21:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (1.0ms)[0m   [0mSELECT * FROM "games" LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering games/index
+Completed in 151ms (View: 16, DB: 2) | 200 OK [http://localhost/games]
+
+
+Processing Member::UsersController#new (for 127.0.0.1 at 2011-03-11 16:21:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"member/users"}
+Rendering template within layouts/application
+Rendering member/users/new
+
+ActionView::TemplateError (undefined method `errors' for #<Array:0x8821d28>) on line #3 of app/views/member/users/new.html.haml:
+1: %h1 Registration
+2: - form_for ([:member,@user]) do |f|
+3:   - if [:member,@user].errors.any?
+4:     .error_messages
+5:       %h2 Form is invalid
+6:       %ul
+
+    app/views/member/users/new.html.haml:3:in `_run_haml_app47views47member47users47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/member/users/new.html.haml:2:in `_run_haml_app47views47member47users47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (204.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Member::UsersController#new (for 127.0.0.1 at 2011-03-11 16:22:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"member/users"}
+Rendering template within layouts/application
+Rendering member/users/new
+
+ActionView::TemplateError (undefined method `Firstname' for #<User:0x8aff948>) on line #11 of app/views/member/users/new.html.haml:
+8:   %p
+9:     = f.label :Firstname
+10:     %br/
+11:     = f.text_field :Firstname
+12:   %p
+13:     = f.label :Lastname
+14:     %br/
+
+    app/views/member/users/new.html.haml:11:in `_run_haml_app47views47member47users47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.25) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/member/users/new.html.haml:2:in `_run_haml_app47views47member47users47new46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Member::UsersController#new (for 127.0.0.1 at 2011-03-11 16:22:28) [GET]
+  Parameters: {"action"=>"new", "controller"=>"member/users"}
+Rendering template within layouts/application
+Rendering member/users/new
+Completed in 130ms (View: 52, DB: 0) | 200 OK [http://localhost/member/users/new]
+
+
+Processing Member::UsersController#new (for 127.0.0.1 at 2011-03-11 16:23:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"member/users"}
+Rendering template within layouts/application
+Rendering member/users/new
+Completed in 144ms (View: 61, DB: 0) | 200 OK [http://localhost/member/users/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 16:23:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 127ms (View: 44, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing Member::UsersController#new (for 127.0.0.1 at 2011-03-11 16:23:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"member/users"}
+Rendering template within layouts/application
+Rendering member/users/new
+Completed in 204ms (View: 36, DB: 0) | 200 OK [http://localhost/member/users/new]
+
+
+Processing Member::UsersController#create (for 127.0.0.1 at 2011-03-11 16:23:26) [POST]
+  Parameters: {"commit"=>"Save changes", "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"member/users", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"joemarti", "lastname"=>"Martinez", "firstname"=>"Joe", "password"=>"[FILTERED]", "email"=>"joemar44@aol.com"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'joemar44@aol.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'joemarti') LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joemar44@aol.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'joemarti') LIMIT 1[0m
+  [4;35;1mUser Create (3.0ms)[0m   [0mINSERT INTO "users" ("created_at", "photo_file_size", "crypted_password", "updated_at", "photo_file_name", "username", "photo_content_type", "lastname", "photo_updated_at", "password_salt", "firstname", "persistence_token", "roles_id", "email") VALUES('2011-03-11 23:23:41', NULL, '529cc331867f727d3ba1c243a6d5abd61fbe57fd3af7c0bf3c063d03f64d7691416043e865af6ffedb74859d080a5e5f1df51f271bbabd823f8991051d6d6b30', '2011-03-11 23:23:41', NULL, 'joemarti', NULL, 'Martinez', NULL, 'ccobQIdShFBzg588C7c6', 'Joe', '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08', NULL, 'joemar44@aol.com')[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/member
+Completed in 14657ms (DB: 5) | 302 Found [http://localhost/member/users]
+
+
+Processing Member::UsersController#index (for 127.0.0.1 at 2011-03-11 16:23:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"member/users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering member/users/index
+
+ActionView::TemplateError (undefined local variable or method `role' for #<User:0x8b61838>) on line #5 of app/views/member/users/index.html.haml:
+2:   .title
+3:     %h1= link_to @title, root_url
+4:   
+5:   -if permitted_to? :login, @user
+6:     .pub_nav 
+7:       %p= link_to "Edit", root_url
+8:       %p= link_to "Logout", logout_path	  
+
+    app/models/user.rb:26:in `role_symbols'
+    c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:238:in `roles_for'
+    c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:292:in `user_roles_privleges_from_options'
+    c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:155:in `permit!'
+    c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:180:in `permit?'
+    c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:70:in `permitted_to!'
+    c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:46:in `permitted_to?'
+    c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/helper.rb:32:in `permitted_to?'
+    app/views/member/users/index.html.haml:5:in `_run_haml_app47views47member47users47index46html46haml'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Member::UsersController#create (for 127.0.0.1 at 2011-03-11 16:23:42) [POST]
+  Parameters: {"commit"=>"Save changes", "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"member/users", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"joemarti", "lastname"=>"Martinez", "firstname"=>"Joe", "password"=>"[FILTERED]", "email"=>"joemar44@aol.com"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'joemar44@aol.com') LIMIT 1[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'joemarti') LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3220b7ab50c3fbdfb422c28350cb1c80204df149ea1b6af6b3afe210f24c0b8b3c65ef0af57e26ac9b5b34960e4ad6c8be8fd3af68f3680c2e364c7eccccffa5') LIMIT 1[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'joemar44@aol.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."username" = 'joemarti') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering member/users/new
+Completed in 282ms (View: 44, DB: 4) | 200 OK [http://localhost/member/users]
+
+
+Processing Member::UsersController#create (for 127.0.0.1 at 2011-03-11 16:26:25) [POST]
+  Parameters: {"commit"=>"Save changes", "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"member/users", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"joemarti", "lastname"=>"Martinez", "firstname"=>"Joe", "password"=>"[FILTERED]", "email"=>"joemar44@aol.com"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+
+NameError (undefined local variable or method `role' for #<User:0x8b04b20>):
+  app/models/user.rb:26:in `role_symbols'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:238:in `roles_for'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:292:in `user_roles_privleges_from_options'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:155:in `permit!'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:586:in `permit!'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `filter_access_filter'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `each'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `all?'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `filter_access_filter'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Member::UsersController#create (for 127.0.0.1 at 2011-03-11 16:28:22) [POST]
+  Parameters: {"commit"=>"Save changes", "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"member/users", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"joemarti", "lastname"=>"Martinez", "firstname"=>"Joe", "password"=>"[FILTERED]", "email"=>"joemar44@aol.com"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+
+NameError (undefined local variable or method `role' for #<User:0x8687250>):
+  app/models/user.rb:26:in `role_symbols'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:238:in `roles_for'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:292:in `user_roles_privleges_from_options'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:155:in `permit!'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:586:in `permit!'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `filter_access_filter'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `each'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `all?'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `filter_access_filter'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (168.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Member::UsersController#create (for 127.0.0.1 at 2011-03-11 16:28:28) [POST]
+  Parameters: {"commit"=>"Save changes", "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"member/users", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"joemarti", "lastname"=>"Martinez", "firstname"=>"Joe", "password"=>"[FILTERED]", "email"=>"joemar44@aol.com"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+
+NameError (undefined local variable or method `role' for #<User:0x8895090>):
+  app/models/user.rb:26:in `role_symbols'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:238:in `roles_for'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:292:in `user_roles_privleges_from_options'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:155:in `permit!'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:586:in `permit!'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `filter_access_filter'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `each'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `all?'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `filter_access_filter'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Member::UsersController#create (for 127.0.0.1 at 2011-03-11 16:31:33) [POST]
+  Parameters: {"commit"=>"Save changes", "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"member/users", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"joemarti", "lastname"=>"Martinez", "firstname"=>"Joe", "password"=>"[FILTERED]", "email"=>"joemar44@aol.com"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `access_level' for Role(id: integer, access_level: string):Class):
+  c:/Ruby187/lib/ruby/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/finder.rb:170:in `method_missing'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/will_paginate-2.3.15/lib/will_paginate/finder.rb:170:in `method_missing'
+  app/models/user.rb:26:in `role_symbols'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:238:in `roles_for'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:292:in `user_roles_privleges_from_options'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/authorization.rb:155:in `permit!'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:586:in `permit!'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `filter_access_filter'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `each'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `all?'
+  c:/Ruby187/lib/ruby/gems/1.8/gems/declarative_authorization-0.5.2/lib/declarative_authorization/in_controller.rb:111:in `filter_access_filter'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUserSessions (20110307103121)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mDROP TABLE "user_sessions"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20110307103121'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20110307030915)
+Migrating to Roles (20110307032352)
+Migrating to CreateRoles (20110307041757)
+Migrating to CreateGames (20110307044132)
+Migrating to AddAttachmentsPhotoToUser (20110307044817)
+Migrating to CreateUserSessions (20110307103121)
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "access_level" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mDROP TABLE "roles"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_roles")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mDROP TABLE "altered_roles"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mDROP TABLE "roles"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_roles")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mDROP TABLE "altered_roles"[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "roles"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDROP TABLE "altered_roles"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "roles"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDROP TABLE "altered_roles"[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "user_sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110307103121')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("user_sessions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing Member::UsersController#create (for 127.0.0.1 at 2011-03-11 16:33:36) [POST]
+  Parameters: {"commit"=>"Save changes", "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"member/users", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"joemarti", "lastname"=>"Martinez", "firstname"=>"Joe", "password"=>"[FILTERED]", "email"=>"joemar44@aol.com"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+Permission denied: No matching rules found for create for #<User id: 2, username: "joemarti", firstname: "Joe", lastname: "Martinez", email: "joemar44@aol.com", roles_id: nil, created_at: "2011-03-11 23:23:41", updated_at: "2011-03-11 23:23:41", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, persistence_token: "7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe...", crypted_password: "529cc331867f727d3ba1c243a6d5abd61fbe57fd3af7c0bf3c0...", password_salt: "ccobQIdShFBzg588C7c6"> (roles [:role], privileges [:create], context :member_users).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 13143ms (DB: 1) | 302 Found [http://localhost/member/users]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 16:33:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+Permission denied: No matching rules found for index for #<User id: 2, username: "joemarti", firstname: "Joe", lastname: "Martinez", email: "joemar44@aol.com", roles_id: nil, created_at: "2011-03-11 23:23:41", updated_at: "2011-03-11 23:23:41", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, persistence_token: "7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe...", crypted_password: "529cc331867f727d3ba1c243a6d5abd61fbe57fd3af7c0bf3c0...", password_salt: "ccobQIdShFBzg588C7c6"> (roles [:role], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 208ms (DB: 1) | 302 Found [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 16:34:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+Permission denied: No matching rules found for index for #<User id: 2, username: "joemarti", firstname: "Joe", lastname: "Martinez", email: "joemar44@aol.com", roles_id: nil, created_at: "2011-03-11 23:23:41", updated_at: "2011-03-11 23:23:41", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, persistence_token: "7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe...", crypted_password: "529cc331867f727d3ba1c243a6d5abd61fbe57fd3af7c0bf3c0...", password_salt: "ccobQIdShFBzg588C7c6"> (roles [:role], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 128ms (DB: 1) | 302 Found [http://localhost/games]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 16:34:10) [GET]
+
+ActionController::RoutingError (No route matches "/users" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 16:34:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+
+NameError (undefined local variable or method `account_url' for #<UserSessionsController:0x88c9de8>):
+  app/controllers/application_controller.rb:45:in `require_no_user'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-11 16:34:31) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe363482d214fd5480b4f45816004ea0aa9b0d47f73611c46ac3d51525dfb7f036daefdac4f3c08') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 186ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 16:34:34) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 128ms (View: 52, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 16:34:44) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"joemarti", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'joemarti') LIMIT 1[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'joemarti') LIMIT 1[0m
+
+NoMethodError (undefined method `role' for #<User:0x8a04440>):
+  app/controllers/user_sessions_controller.rb:14:in `create'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUserSessions (20110307103121)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mDROP TABLE "user_sessions"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20110307103121'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("games")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20110307030915)
+Migrating to Roles (20110307032352)
+Migrating to CreateRoles (20110307041757)
+Migrating to CreateGames (20110307044132)
+Migrating to AddAttachmentsPhotoToUser (20110307044817)
+Migrating to CreateUserSessions (20110307103121)
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "roles"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_roles")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mDROP TABLE "altered_roles"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "roles"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_roles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDROP TABLE "altered_roles"[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mALTER TABLE "roles" ADD "name" varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "user_sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110307103121')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("games")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("user_sessions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 16:38:17) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"joemarti", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+
+NameError (undefined local variable or method `account_url' for #<UserSessionsController:0x88f9d70>):
+  app/controllers/application_controller.rb:45:in `require_no_user'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 16:38:30) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"joemarti", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+
+NameError (undefined local variable or method `account_url' for #<UserSessionsController:0x8befd98>):
+  app/controllers/application_controller.rb:45:in `require_no_user'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 16:40:03) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"joemarti", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+
+NameError (undefined local variable or method `account_url' for #<UserSessionsController:0x89167b0>):
+  app/controllers/application_controller.rb:45:in `require_no_user'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 16:40:59) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"joemarti", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 94ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 16:41:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Permission denied: No matching rules found for index for #<User id: 2, username: "joemarti", firstname: "Joe", lastname: "Martinez", email: "joemar44@aol.com", roles_id: nil, created_at: "2011-03-11 23:23:41", updated_at: "2011-03-11 23:23:41", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, persistence_token: "7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe...", crypted_password: "529cc331867f727d3ba1c243a6d5abd61fbe57fd3af7c0bf3c0...", password_salt: "ccobQIdShFBzg588C7c6"> (roles [:role], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 128ms (DB: 1) | 302 Found [http://localhost/games]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 16:41:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 92ms (DB: 1) | 302 Found [http://localhost/login]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2011-03-11 16:41:47) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 100ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2011-03-11 16:41:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 130ms (View: 55, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 16:42:30) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"joemarti", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'joemarti') LIMIT 1[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."username" = 'joemarti') LIMIT 1[0m
+
+NoMethodError (undefined method `role' for #<User:0x8bd1780>):
+  app/controllers/user_sessions_controller.rb:14:in `create'
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 16:43:52) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"joemarti", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 97ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2011-03-11 16:46:03) [POST]
+  Parameters: {"commit"=>"Log in", "user_session"=>{"username"=>"joemarti", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"ugDElWynHprLMMjjGzLJf9Wp7mzrCPQN7E+b3xOvA8g=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 95ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 16:46:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Permission denied: No matching rules found for index for #<User id: 2, username: "joemarti", firstname: "Joe", lastname: "Martinez", email: "joemar44@aol.com", roles_id: nil, created_at: "2011-03-11 23:23:41", updated_at: "2011-03-11 23:23:41", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, persistence_token: "7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe...", crypted_password: "529cc331867f727d3ba1c243a6d5abd61fbe57fd3af7c0bf3c0...", password_salt: "ccobQIdShFBzg588C7c6"> (roles [:role], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 127ms (DB: 1) | 302 Found [http://localhost/games]
+
+
+Processing GamesController#index (for 127.0.0.1 at 2011-03-11 16:46:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"games"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Permission denied: No matching rules found for index for #<User id: 2, username: "joemarti", firstname: "Joe", lastname: "Martinez", email: "joemar44@aol.com", roles_id: nil, created_at: "2011-03-11 23:23:41", updated_at: "2011-03-11 23:23:41", photo_file_name: nil, photo_content_type: nil, photo_file_size: nil, photo_updated_at: nil, persistence_token: "7c9ebbb953e085172e7208b5ff74ac3f298bc5f90882cc00dfe...", crypted_password: "529cc331867f727d3ba1c243a6d5abd61fbe57fd3af7c0bf3c0...", password_salt: "ccobQIdShFBzg588C7c6"> (roles [:role], privileges [:index], context :games).
+Redirected to http://localhost:3000/
+Filter chain halted as [:filter_access_filter] rendered_or_redirected.
+Completed in 128ms (DB: 1) | 302 Found [http://localhost/games]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 16:46:50) [GET]
+
+ActionController::RoutingError (No route matches "/users" with {:method=>:get}):
+  haml (3.0.25) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

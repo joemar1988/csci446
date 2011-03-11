@@ -1,4 +1,4 @@
-class RolesController < ApplicationController
+class Admin::RolesController < ApplicationController
   before_filter :find_role, only => [:show, :edit, :update, :destroy]
   filter_resource_access
 
